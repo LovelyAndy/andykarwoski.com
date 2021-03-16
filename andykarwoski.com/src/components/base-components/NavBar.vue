@@ -1,14 +1,14 @@
 <template>
   <div class="nav-bar-container">
-    <div class="about">about</div>
-    <div class="portfolio">portfolio</div>
-    <div class="contact">contact</div>
+    <div class="t-navbar about">about</div>
+    <div class="t-navbar portfolio">portfolio</div>
+    <div class="t-navbar contact">contact</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'BaseNavBar',
+  name: 'NavBar',
   props: {},
   data() {
     return {}

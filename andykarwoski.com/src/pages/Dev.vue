@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import SuidobashiPF from '../components/base-components/SuidobashiPF.vue'
+import SuidobashiPF from '../base-components/SuidobashiPF.vue'
 
 export default {
   name: 'DevPage',

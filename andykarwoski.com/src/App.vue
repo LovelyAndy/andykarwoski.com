@@ -1,16 +1,13 @@
 <template>
   <div id="app">
     <router-view />
-    <BaseNavBar />
   </div>
 </template>
 
 <script>
-import BaseNavBar from './components/atoms/BaseNavBar.vue'
-
 export default {
   name: 'App',
-  components: { BaseNavBar },
+  components: {},
 }
 </script>
 
@@ -22,7 +19,7 @@ export default {
 *,
 *::after,*::before
   box-sizing: border-box
-  font-family: 'vonnes', sans-serif
+  font-family: 'Vonnes', sans-serif
 
 body
   margin: 0px

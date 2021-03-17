@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <NavBar class="nav-bar" />
-    <TitleAndProfilePic class="title-prof" />
+    <Hero class="title-prof" />
+    <About />
     <MyFooter />
   </div>
 </template>
@@ -9,11 +10,12 @@
 <script>
 import NavBar from '../components/base-components/NavBar.vue'
 import MyFooter from '../components/sections/MyFooter.vue'
-import TitleAndProfilePic from '../components/sections/TitleAndProfilePic.vue'
+import Hero from '../components/sections/Hero.vue'
+import About from '../components/sections/About.vue'
 
 export default {
   name: 'Home',
-  components: { NavBar, TitleAndProfilePic, MyFooter },
+  components: { NavBar, Hero, MyFooter, About },
 }
 </script>
 <style lang="sass"scoped>

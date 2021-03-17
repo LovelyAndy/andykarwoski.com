@@ -25,4 +25,5 @@ body
   margin: 0px
   padding: 2rem 12.5rem
   text-align: center
+  background-color: $c-bg-white
 </style>

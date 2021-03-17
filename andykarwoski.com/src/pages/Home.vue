@@ -2,16 +2,18 @@
   <div class="home">
     <NavBar class="nav-bar" />
     <TitleAndProfilePic class="title-prof" />
+    <MyFooter />
   </div>
 </template>
 
 <script>
 import NavBar from '../components/base-components/NavBar.vue'
-import TitleAndProfilePic from '../components/base-components/TitleAndProfilePic.vue'
+import MyFooter from '../components/sections/MyFooter.vue'
+import TitleAndProfilePic from '../components/sections/TitleAndProfilePic.vue'
 
 export default {
   name: 'Home',
-  components: { NavBar, TitleAndProfilePic },
+  components: { NavBar, TitleAndProfilePic, MyFooter },
 }
 </script>
 <style lang="sass"scoped>

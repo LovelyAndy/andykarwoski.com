@@ -1,5 +1,5 @@
 <template>
-  <div class="component-wrapper">
+  <div class="profile-pic-pf">
     <div class="pic-wrapper">
       <img src="/imgs/profile-pic.jpg" alt="Profile Picture" class="pic" />
       <div class="frame"></div>
@@ -28,7 +28,7 @@ img
     // cursor: pointer
     filter: saturate(100%)
     transition: all 500ms
-.component-wrapper
+.profile-pic-pf
   display: flex
   flex-direction: column
   justify-content: center

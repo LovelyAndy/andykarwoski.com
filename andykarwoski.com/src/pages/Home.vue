@@ -24,7 +24,7 @@ export default {
   display: flex
   flex-direction: column
   justify-content: center
-  align-items: flex-start
+  align-items: stretch
 .nav-bar
   border: 2px solid red
 </style>

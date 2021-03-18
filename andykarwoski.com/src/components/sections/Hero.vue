@@ -1,5 +1,5 @@
 <template>
-  <div class="component-wrapper">
+  <div class="hero">
     <ProfilePicPF />
     <div class="title-els">
       <div class="title-els_name">
@@ -32,39 +32,25 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
-.component-wrapper
+.hero
   display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+  flex-direction: row
+  justify-content: flex-start
 
 .title-els
-  position: relative
   display: flex
   flex-direction: column
 .title-els_name
   text-align: left
   z-index: 3
 
-.andy
-  position: absolute
-  bottom: 13.5rem
-  left: 26.25rem
-  color: $c-red
-.karwoski
-  position: absolute
-  bottom: 6.55rem
-  left: 29.55rem
-  color: $c-blue
-.title-els_sub
-  position: relative
-  bottom: 4rem
-  left: 31.25rem
-
-.frontend
-  color: $c-blue
-.line
-  color: $c-gold
+.andy,
 .designer
   color: $c-red
+.karwoski,
+.frontend
+  color: $c-blue
+
+.line
+  color: $c-gold
 </style>

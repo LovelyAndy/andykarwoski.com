@@ -21,6 +21,8 @@ export default {
   box-sizing: border-box
   font-family: 'Vonnes', sans-serif
 
+html
+  font-size: 62.5%
 body
   margin: 0px
   padding: 2rem 12.5rem

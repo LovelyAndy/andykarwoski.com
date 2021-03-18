@@ -40,7 +40,8 @@ export default {
 .title-els
   display: flex
   flex-direction: column
-  margin-left: -2rem
+  margin-top: 8rem
+  margin-left: -2.5rem
 .title-els_main
   text-align: left
   z-index: 3
@@ -49,8 +50,8 @@ export default {
     color: $c-red
   .karwoski
     display: block
-    margin-top: -3.78rem
-    margin-left: 3.3rem
+    margin-top: -6.25rem
+    margin-left: 5.25rem
     color: $c-blue
 .title-els_sub
   text-align: center

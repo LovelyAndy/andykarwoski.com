@@ -1,10 +1,10 @@
 <template>
   <div class="dev-page-wrapper">
-    <About />
+    <!-- <About /> -->
     <!-- <BaseLinks />
     <br />
     <br />
-    <br />
+    <br />-->
     <ProfilePicPF />
     <br />
     <br />
@@ -17,7 +17,7 @@
     <br />
     <br />
     <br />
-    <FromFujiPF /> -->
+    <FromFujiPF />
   </div>
 </template>
 

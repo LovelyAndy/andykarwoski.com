@@ -42,11 +42,11 @@ hr
 
 .section-title_red
   margin-right: auto
-  margin-left: 4rem
+  margin-left: 6.8rem
   color: $c-red
 
 .section-title_blue
   margin-left: auto
-  margin-right: 4rem
+  margin-right: 6.8rem
   color: $c-blue
 </style>

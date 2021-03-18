@@ -41,8 +41,8 @@ img
 .pic
   position: relative
   z-index: 2
-  max-width: 38rem
-  max-height: 34.2rem
+  max-width: 43.4rem
+  max-height: 28.9rem
 
 .frame
   position: absolute

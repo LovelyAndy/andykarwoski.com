@@ -41,8 +41,8 @@ img
 .pic
   position: relative
   z-index: 2
-  max-width: 38rem
-  max-height: 34.2rem
+  max-width: 29rem
+  max-height: 44.5rem
 .frame
   position: absolute
   background: $c-gold

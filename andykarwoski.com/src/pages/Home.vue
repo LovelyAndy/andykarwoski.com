@@ -1,9 +1,12 @@
 <template>
   <div class="home">
     <NavBar class="nav-bar" />
-    <Hero class="title-prof" />
+    <!-- <Hero class="title-prof" />
+    <Gallery />
     <About />
-    <MyFooter />
+    <Portfolio />
+    <Contact />
+    <MyFooter /> -->
   </div>
 </template>
 
@@ -12,10 +15,13 @@ import NavBar from '../components/base-components/NavBar.vue'
 import MyFooter from '../components/sections/MyFooter.vue'
 import Hero from '../components/sections/Hero.vue'
 import About from '../components/sections/About.vue'
+import Gallery from '../components/sections/Gallery.vue'
+import Portfolio from '../components/sections/Portfolio.vue'
+import Contact from '../components/sections/Contact.vue'
 
 export default {
   name: 'Home',
-  components: { NavBar, Hero, MyFooter, About },
+  components: { NavBar, Hero, MyFooter, About, Gallery, Portfolio, Contact },
 }
 </script>
 <style lang="sass"scoped>
@@ -26,5 +32,5 @@ export default {
   justify-content: center
   align-items: stretch
 .nav-bar
-  border: 2px solid red
+  width: 100%
 </style>

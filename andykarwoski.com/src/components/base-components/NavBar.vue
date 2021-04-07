@@ -1,9 +1,11 @@
 <template>
-  <div class="nav-bar-container">
-    <div class="t-navbar about">about</div>
-    <div class="t-navbar portfolio">portfolio</div>
-    <div class="t-navbar contact">contact</div>
-  </div>
+  <nav>
+    <ul class="links">
+      <li class="links__link t-navbar"><a class="red" href="#">About</a></li>
+      <li class="links__link t-navbar blue"><a class="blue" href="#">Portfolio</a></li>
+      <li class="links__link t-navbar yellow"><a class="gold" href="#">Contact</a></li>
+    </ul>
+  </nav>
 </template>
 
 <script>
@@ -12,6 +14,25 @@ export default {
   props: {},
   data() {
     return {}
+    // return {
+    //   navLinks: [
+    //     {
+    //       path: '/about',
+    //       name: 'about',
+    //       component: About,
+    //     },
+    //     {
+    //       path: '/portfolio',
+    //       name: 'Portfolio',
+    //       component: Portfolio,
+    //     },
+    //     {
+    //       path: '/contact',
+    //       name: 'Contact',
+    //       component: Contact,
+    //     },
+    //   ],
+    // }
   },
   computed: {},
   methods: {},
@@ -21,18 +42,29 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
-.nav-bar-container
+@import '../../css/breakpoints.scss'
+nav
   display: flex
-  justify-content: flex-start
-  align-items: center
-  width: 100%
+  justify-content: flex-end
+  padding: 1em 5em
+  .links
+    display: flex
+    justify-content: space-around
+    align-items: flex-end
+    width: 60%
+    li
+      list-style: none
+    a
+      text-decoration: none
+      &.red
+        color: $c-red
+      &.blue
+        color: $c-blue
+      &.gold
+        color: $c-gold
+.links__link
+  &+ .links__link
+    margin-left: 1em
 
-.about
-  color: $c-blue
-  padding-right: 3.5rem
-.portfolio
-  color: $c-red
-  padding-right: 3.5rem
-.contact
-  color: $c-gold
+@include media ('<tablet')
 </style>

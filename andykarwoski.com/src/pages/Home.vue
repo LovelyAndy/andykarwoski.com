@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <NavBar class="nav-bar" />
-    <!-- <Hero class="title-prof" />
-    <Gallery />
+    <Hero />
+    <!-- <Gallery />
     <About />
     <Portfolio />
     <Contact />

@@ -15,6 +15,7 @@ export default {
 <style lang="sass">
 @import './css/colors.sass'
 @import './css/typography.sass'
+@import './css/breakpoints.scss'
 
 *,
 *::after,*::before
@@ -26,6 +27,7 @@ html
 body
   margin: 0rem
   padding: 0
+  max-width: 100rem
   text-align: center
   background-color: $c-bg-white
 </style>

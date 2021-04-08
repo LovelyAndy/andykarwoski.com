@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <ProfilePicPF />
+    <!-- <ProfilePicPF /> -->
     <div class="title-els">
       <div class="title-els_main">
         <span class="t-main-title andy">Andy</span>

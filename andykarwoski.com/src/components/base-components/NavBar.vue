@@ -2,8 +2,8 @@
   <nav>
     <ul class="links">
       <li class="links__link t-navbar"><a class="red" href="#">About</a></li>
-      <li class="links__link t-navbar blue"><a class="blue" href="#">Portfolio</a></li>
-      <li class="links__link t-navbar yellow"><a class="gold" href="#">Contact</a></li>
+      <li class="links__link t-navbar"><a class="blue" href="#">Portfolio</a></li>
+      <li class="links__link t-navbar"><a class="gold" href="#">Contact</a></li>
     </ul>
   </nav>
 </template>
@@ -46,13 +46,17 @@ export default {
 nav
   display: flex
   justify-content: flex-end
-  padding: 1em 5em
+  padding: 1em 0
+  width: 100%
+  height: auto
   .links
     display: flex
     justify-content: space-around
     align-items: flex-end
     width: 60%
-    li
+    margin: 0 auto
+    &__link
+      font-weight: 600
       list-style: none
     a
       text-decoration: none
@@ -64,7 +68,7 @@ nav
         color: $c-gold
 .links__link
   &+ .links__link
-    margin-left: 1em
+    margin-left: .5em
 
 @include media ('<tablet')
 </style>

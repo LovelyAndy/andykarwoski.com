@@ -25,7 +25,7 @@ html
   font-size: 62.5%
 body
   margin: 0rem
-  padding: 0 clamp(2rem, 36vw, 20rem)
+  padding: 0
   text-align: center
   background-color: $c-bg-white
 </style>

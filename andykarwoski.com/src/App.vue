@@ -25,9 +25,9 @@ export default {
 html
   font-size: 62.5%
 body
-  margin: 0rem
+  margin: 0
   padding: 0
-  max-width: 100rem
+  max-width: 100%
   text-align: center
   background-color: $c-bg-white
 </style>

@@ -51,9 +51,9 @@ nav
   height: auto
   .links
     display: flex
-    justify-content: space-around
+    justify-content: flex-end
     align-items: flex-end
-    width: 60%
+    width: 100%
     margin: 0 auto
     &__link
       font-weight: 600
@@ -68,7 +68,9 @@ nav
         color: $c-gold
 .links__link
   &+ .links__link
-    margin-left: .5em
+    margin-left: 1em
 
 @include media ('<tablet')
+  nav
+    padding-right: 1em
 </style>

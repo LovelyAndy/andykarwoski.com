@@ -1,17 +1,11 @@
 <template>
   <div class="hero">
-    <!-- <ProfilePicPF /> -->
-    <div class="title-els">
-      <div class="title-els_main">
-        <span class="t-main-title andy">Andy</span>
-        <span class="t-main-title karwoski">Karwoski</span>
-      </div>
-      <div class="title-els_sub">
-        <span class="t-section-title-md frontend">frontend web developer</span>
-        <span class="t-section-title-md line"> / </span>
-        <span class="t-section-title-md designer">designer</span>
-      </div>
-    </div>
+    <ProfilePicPF class="profile-pic" />
+    <img
+      src="svgs/main-sub-title.svg"
+      alt="Andy Karwoski Frontend Web Dev / Designer"
+      class="main-title"
+    />
   </div>
 </template>
 
@@ -34,34 +28,42 @@ export default {
 @import '../../css/colors.sass'
 .hero
   display: flex
-  flex-direction: row
-  justify-content: flex-start
+  justify-content: center
 
-.title-els
-  display: flex
-  flex-direction: column
-  margin-top: 8rem
-  margin-left: -2.5rem
-.title-els_main
-  text-align: left
-  z-index: 3
-  .andy
-    display: block
-    color: $c-red
-  .karwoski
-    display: block
-    margin-top: -6.25rem
-    margin-left: 5.25rem
-    color: $c-blue
-.title-els_sub
-  text-align: center
-  margin-top: -1.5rem
-  margin-left: 3.5rem
-  .designer
-    color: $c-red
-  .frontend
-    color: $c-blue
+.main-title
+  margin-left: -2rem
+  width: clamp(26rem, 50vw, 78rem)
+  z-index: 2
 
-.line
-  color: $c-gold
+.profile-pic
+  width: clamp(18rem, 20vw, 21rem)
+
+// .title-els
+//   display: flex
+//   flex-direction: column
+//   justify-content: center
+//   align-items: center
+//   margin-top: 8rem
+// .title-els__main
+//   text-align: left
+//   z-index: 3
+//   .andy
+//     display: block
+//     color: $c-red
+//   .karwoski
+//     display: block
+//     margin-top: -6.25rem
+//     margin-left: 5.25rem
+//     color: $c-blue
+// .title-els_sub
+//   text-align: center
+//   margin-top: -1.5rem
+//   margin-left: 3.5rem
+//   .designer
+//     color: $c-red
+//   .frontend
+//     color: $c-blue
+
+// .line
+//   color: $c-gold
 </style>

@@ -51,7 +51,7 @@ export default {
     justify-content: space-around
     align-items: center
     height: 70vh
-    border: 2px solid #ff9b85
+    // border: 2px solid #ff9b85
 
 @include media('>=phone', '<=465px', 'retina2x')
   .hero
@@ -59,18 +59,19 @@ export default {
     flex-direction: column-reverse
     justify-content: space-around
     align-items: center
-    border: 2px solid #ae72a9
+    height: 70vh
+    // border: 2px solid #ae72a9
 
 @include media('>=465px', '<tablet')
   .hero
-    border: 2px solid goldenrod
+    // border: 2px solid goldenrod
 @include media('>=tablet', '<desktop')
   .hero
-    border: 2px solid #a3c3d9
+    // border: 2px solid #a3c3d9
 
 @include media('>=desktop')
   .hero
-    border: 2px solid green
+    // border: 2px solid green
 // .title-els
 //   display: flex
 //   flex-direction: column

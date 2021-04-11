@@ -1,5 +1,5 @@
 <template>
-  <div class="profile-pic-pf">
+  <div class="component-wrapper">
     <div class="pic-wrapper">
       <img src="/imgs/profile-pic.jpg" alt="Profile Picture" class="pic" />
       <div class="frame"></div>
@@ -29,11 +29,7 @@ img
     // cursor: pointer
     filter: saturate(100%)
     transition: all 500ms
-.profile-pic-pf
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+.component-wrapper
   width: clamp(18rem, 20vw, 21rem)
 
 .pic-wrapper
@@ -48,10 +44,10 @@ img
 .frame
   position: absolute
   background: $c-gold
-  top: -1.25em
-  bottom: 1.25em
-  left: -1.25em
-  right: 1.25em
+  top: -4.5%
+  bottom: 4.5%
+  left: -5.5%
+  right: 5.5%
   z-index: 1
 
 // //phone viewport

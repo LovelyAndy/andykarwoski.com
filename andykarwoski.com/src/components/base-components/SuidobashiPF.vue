@@ -29,27 +29,24 @@ img
     filter: saturate(100%)
     transition: all 500ms
 .component-wrapper
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+  width: clamp(14rem, 7.1556rem + 21.3889vw, 29.4rem)
 
 .pic-wrapper
   position: relative
-  max-width: 100%
 
 .pic
   position: relative
   z-index: 2
-  max-width: 38rem
-  max-height: 34.2rem
+  max-width: 100%
+  // max-width: 38rem
+  // max-height: 34.2rem
 
 .frame
   position: absolute
   background: $c-gold
-  top: 1.25rem
-  bottom: -1.25rem
-  left: -1.25rem
-  right: 1.25rem
+  top: 4.5%
+  bottom: -4.5%
+  left: -5.5%
+  right: 5.5%
   z-index: 1
 </style>

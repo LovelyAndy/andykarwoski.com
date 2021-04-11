@@ -2,8 +2,8 @@
   <div class="home">
     <NavBar class="nav-bar" />
     <Hero />
-    <!-- <Gallery />
     <About />
+    <!-- <Gallery />
     <Portfolio />
     <Contact />
     <MyFooter /> -->

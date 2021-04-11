@@ -47,9 +47,9 @@ img
 .frame
   position: absolute
   background: $c-gold
-  top: -1.25rem
-  bottom: 1.25rem
-  left: -1.25rem
-  right: 1.25rem
+  top: -4.5%
+  bottom: 4.5%
+  left: -5.5%
+  right: 5.5%
   z-index: 1
 </style>

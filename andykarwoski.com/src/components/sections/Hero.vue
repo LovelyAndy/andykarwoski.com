@@ -43,6 +43,7 @@ export default {
 //   width: clamp(18rem, 20vw, 21rem)
 
 .sns-links
+  margin-top: -1em // CAREFUL WITH THIS!!!!!
 
 @include media('<=phone')
   .hero
@@ -53,7 +54,7 @@ export default {
     height: 70vh
     // border: 2px solid #ff9b85
 
-@include media('>=phone', '<=465px', 'retina2x')
+@include media('>=phone', '<=425px', 'retina2x')
   .hero
     display: flex
     flex-direction: column-reverse
@@ -62,7 +63,7 @@ export default {
     height: 70vh
     // border: 2px solid #ae72a9
 
-@include media('>=465px', '<tablet')
+@include media('>=425px', '<tablet')
   .hero
     // border: 2px solid goldenrod
 @include media('>=tablet', '<desktop')

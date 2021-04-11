@@ -37,10 +37,10 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
+.component-wrapper
+  padding: 1em
 span
   color: $c-red
-.component-wrapper
-  border: 1px solid green
 .text
   display: flex
   flex-direction: column
@@ -49,4 +49,6 @@ span
   padding: 0 2rem
   & > *
     text-align: left
+.t-body
+  text-align: left
 </style>

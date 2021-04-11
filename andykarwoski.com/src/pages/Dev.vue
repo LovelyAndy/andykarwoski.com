@@ -4,8 +4,8 @@
     <!-- <Gallery /> -->
     <!-- <About /> -->
     <!-- <BaseLinks />-->
-    <Hero />
-    <!-- <ProfilePicPF class="img--profile" /> -->
+    <!-- <Hero /> -->
+    <ProfilePicPF class="img--profile" />
     <!-- <br />
     <br />
     <br />
@@ -32,6 +32,7 @@ import About from '../components/sections/About.vue'
 import Gallery from '../components/sections/Gallery.vue'
 import NavBar from '../components/base-components/NavBar.vue'
 import Hero from '../components/sections/Hero.vue'
+
 export default {
   name: 'DevPage',
   components: {

@@ -1,5 +1,6 @@
 <template>
   <div class="hero">
+    <BaseLinks class="sns-links" />
     <ProfilePicPF class="profile-pic" />
     <img
       src="svgs/main-sub-title.svg"
@@ -10,9 +11,10 @@
 </template>
 
 <script>
+import BaseLinks from '../base-components/BaseLinks.vue'
 import ProfilePicPF from '../base-components/ProfilePicPF.vue'
 export default {
-  components: { ProfilePicPF },
+  components: { ProfilePicPF, BaseLinks },
   name: 'TitleAndProfilePic',
   props: {},
   data() {
@@ -26,6 +28,8 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
+@import '../../css/breakpoints.scss'
+
 .hero
   display: flex
   justify-content: center
@@ -35,9 +39,38 @@ export default {
   width: clamp(26rem, 50vw, 78rem)
   z-index: 2
 
-.profile-pic
-  width: clamp(18rem, 20vw, 21rem)
+// .profile-pic
+//   width: clamp(18rem, 20vw, 21rem)
 
+.sns-links
+
+@include media('<=phone')
+  .hero
+    display: flex
+    flex-direction: column-reverse
+    justify-content: space-around
+    align-items: center
+    height: 70vh
+    border: 2px solid #ff9b85
+
+@include media('>=phone', '<=465px', 'retina2x')
+  .hero
+    display: flex
+    flex-direction: column-reverse
+    justify-content: space-around
+    align-items: center
+    border: 2px solid #ae72a9
+
+@include media('>=465px', '<tablet')
+  .hero
+    border: 2px solid goldenrod
+@include media('>=tablet', '<desktop')
+  .hero
+    border: 2px solid #a3c3d9
+
+@include media('>=desktop')
+  .hero
+    border: 2px solid green
 // .title-els
 //   display: flex
 //   flex-direction: column

@@ -27,10 +27,10 @@ export default {
 .container
   display: flex
   flex-direction: row
-@media (min-width: 40rem)
-  .container > * + *
-    margin-left: 0.75rem
-
+.container > * + *
+  margin-left: .75em
 .icon
   cursor: pointer
+  width: 100%
+  // width: clamp(3.1rem, 2.5667rem + 1.6667vw, 4.3rem)
 </style>

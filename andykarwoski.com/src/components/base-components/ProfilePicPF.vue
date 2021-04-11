@@ -34,6 +34,7 @@ img
   flex-direction: column
   justify-content: center
   align-items: center
+  width: clamp(18rem, 20vw, 21rem)
 
 .pic-wrapper
   position: relative
@@ -47,10 +48,10 @@ img
 .frame
   position: absolute
   background: $c-gold
-  top: -1.25rem
-  bottom: 1.25rem
-  left: -1.25rem
-  right: 1.25rem
+  top: -1.25em
+  bottom: 1.25em
+  left: -1.25em
+  right: 1.25em
   z-index: 1
 
 // //phone viewport

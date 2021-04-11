@@ -17,5 +17,6 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
+@import '../../css/breakpoints.scss'
 // .component-name
 </style>

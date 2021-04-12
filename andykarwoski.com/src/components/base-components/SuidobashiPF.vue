@@ -29,10 +29,10 @@ img
     filter: saturate(100%)
     transition: all 500ms
 .component-wrapper
-  width: clamp(14rem, 7.1556rem + 21.3889vw, 29.4rem)
 
 .pic-wrapper
   position: relative
+  max-width: 29rem
 
 .pic
   position: relative

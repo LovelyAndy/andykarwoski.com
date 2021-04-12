@@ -4,7 +4,7 @@
       {{ title }}
     </div>
     <hr :class="`${lineColor}`" />
-    <SuidobashiPF />
+
     <!-- <div v-if="fontColor === blue" class="section-title_blue t-section-title-lg">
       {{ title }}
     </div>
@@ -13,10 +13,8 @@
 </template>
 
 <script>
-import SuidobashiPF from './SuidobashiPF.vue'
-
 export default {
-  components: { SuidobashiPF },
+  components: {},
   name: 'SectionTitle',
   props: {
     title: { type: String },
@@ -48,12 +46,12 @@ hr
 
 .section-title_red
   margin-right: auto
-  margin-left: 6.8rem
+  margin-left: 6.8em
   color: $c-red
 
 .section-title_blue
   margin-left: auto
-  margin-right: 6.8rem
+  margin-right: 6.8em
   color: $c-blue
 
 @include media('<tablet')

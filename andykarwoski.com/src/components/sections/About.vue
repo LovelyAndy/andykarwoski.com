@@ -16,14 +16,16 @@
         I’ve also started a <span>blog</span> about my life from the busy streets of Tokyo, to my
         dive into the vast ocean of programming if you’re into that sort of thing.
       </p>
+      <SuidobashiPF />
     </div>
   </div>
 </template>
 
 <script>
 import SectionTitle from '../base-components/SectionTitle.vue'
+import SuidobashiPF from '../base-components/SuidobashiPF.vue'
 export default {
-  components: { SectionTitle },
+  components: { SectionTitle, SuidobashiPF },
   name: 'About',
   props: {},
   data() {
@@ -38,7 +40,7 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 .component-wrapper
-  padding: 1em
+  padding: 1em 2em
 span
   color: $c-red
 .text

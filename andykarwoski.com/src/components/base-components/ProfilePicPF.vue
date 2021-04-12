@@ -30,7 +30,7 @@ img
     filter: saturate(100%)
     transition: all 500ms
 .component-wrapper
-  width: clamp(18rem, 20vw, 21rem)
+  max-width: 21rem
 
 .pic-wrapper
   position: relative
@@ -44,7 +44,7 @@ img
 .frame
   position: absolute
   background: $c-gold
-  top: -4.5%
+  top: -3.5%
   bottom: 4.5%
   left: -5.5%
   right: 5.5%

@@ -51,7 +51,7 @@ export default {
     flex-direction: column-reverse
     justify-content: space-around
     align-items: center
-    height: 70vh
+    height: 80vh
     // border: 2px solid #ff9b85
 
 @include media('>=phone', '<=425px', 'retina2x')

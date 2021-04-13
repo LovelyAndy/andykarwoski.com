@@ -27,8 +27,7 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 .contact-wrapper
-  display: flex
-  flex-direction: column
+  padding: 1em 2em
 
 .contact-text
   text-align: center

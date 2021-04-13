@@ -35,15 +35,16 @@ export default {
   justify-content: center
 
 .main-title
-  margin-left: -2rem
-  width: clamp(26rem, 50vw, 78rem)
+  padding: 0em 3em
+  width: 100%
+  // width: clamp(26rem, 50vw, 78rem)
   z-index: 2
 
 // .profile-pic
 //   width: clamp(18rem, 20vw, 21rem)
 
 .sns-links
-  margin-top: -1em // CAREFUL WITH THIS!!!!!
+  margin-top: 0em // CAREFUL WITH THIS!!!!!
 
 @include media('<=phone')
   .hero
@@ -51,8 +52,8 @@ export default {
     flex-direction: column-reverse
     justify-content: space-around
     align-items: center
-    height: 80vh
-    // border: 2px solid #ff9b85
+    height: 90vh
+    //border: 2px solid #ff9b85
 
 @include media('>=phone', '<=425px', 'retina2x')
   .hero

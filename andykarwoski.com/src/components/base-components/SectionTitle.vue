@@ -63,8 +63,8 @@ hr
     border: 1px solid $c-red
 .section-title_red
   margin-right: auto
-  margin-left: 1.25rem
+  margin-left: .35em
 .section-title_blue
-  margin-right: auto
-  margin-left: 1.25rem
+  margin-right: .35em
+  margin-left: auto
 </style>

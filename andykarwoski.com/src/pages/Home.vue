@@ -3,9 +3,9 @@
     <NavBar class="nav-bar" />
     <Hero />
     <About />
-    <!-- <Gallery />
     <Portfolio />
     <Contact />
+    <!-- <Gallery />
     <MyFooter /> -->
   </div>
 </template>

@@ -54,7 +54,7 @@ nav
     justify-content: flex-end
     align-items: flex-end
     width: 100%
-    margin: 0 2em
+    margin: 0 1.5em
     &__link
       font-weight: 600
       list-style: none

@@ -1,5 +1,5 @@
 <template>
-  <div class="component-wrapper">
+  <div class="about-wrapper">
     <SectionTitle title="about" fontColor="red" lineColor="blue" />
     <div class="text">
       <p class="t-body">
@@ -16,7 +16,7 @@
         I’ve also started a <span>blog</span> about my life from the busy streets of Tokyo, to my
         dive into the vast ocean of programming if you’re into that sort of thing.
       </p>
-      <SuidobashiPF />
+      <SuidobashiPF class="pic" />
     </div>
   </div>
 </template>
@@ -39,10 +39,14 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
-.component-wrapper
+.about-wrapper
   padding: 1em 2em
 span
   color: $c-red
+p
+  margin: .5em
+  padding: 0em
+
 .text
   display: flex
   flex-direction: column
@@ -53,4 +57,6 @@ span
     text-align: left
 .t-body
   text-align: left
+.pic
+  padding: 2em 0
 </style>

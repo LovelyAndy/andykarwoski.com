@@ -1,9 +1,13 @@
 <template>
   <nav>
     <ul class="links">
-      <li class="links__link t-navbar"><a class="red" href="#">About</a></li>
-      <li class="links__link t-navbar"><a class="blue" href="#">Portfolio</a></li>
-      <li class="links__link t-navbar"><a class="gold" href="#">Contact</a></li>
+      <li class="links__link t-navbar"><a class="red" href="#" v-scroll-to="'#about'">About</a></li>
+      <li class="links__link t-navbar">
+        <a class="blue" href="#" v-scroll-to="'#portfolio'">Portfolio</a>
+      </li>
+      <li class="links__link t-navbar">
+        <a class="gold" href="#" v-scroll-to="'#contact'">Contact</a>
+      </li>
     </ul>
   </nav>
 </template>
@@ -14,25 +18,6 @@ export default {
   props: {},
   data() {
     return {}
-    // return {
-    //   navLinks: [
-    //     {
-    //       path: '/about',
-    //       name: 'about',
-    //       component: About,
-    //     },
-    //     {
-    //       path: '/portfolio',
-    //       name: 'Portfolio',
-    //       component: Portfolio,
-    //     },
-    //     {
-    //       path: '/contact',
-    //       name: 'Contact',
-    //       component: Contact,
-    //     },
-    //   ],
-    // }
   },
   computed: {},
   methods: {},

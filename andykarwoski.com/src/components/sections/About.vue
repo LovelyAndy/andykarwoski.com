@@ -1,5 +1,5 @@
 <template>
-  <div class="about-wrapper">
+  <div id="about" class="about-wrapper">
     <SectionTitle title="about" fontColor="red" lineColor="blue" />
     <div class="text">
       <p class="t-body">

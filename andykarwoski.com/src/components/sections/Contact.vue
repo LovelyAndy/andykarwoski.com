@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-wrapper">
+  <div id="contact" class="contact-wrapper">
     <SectionTitle title="contact" fontColor="red" lineColor="blue" />
     <p class="contact-text t-body">
       If you like my projects, want to hear more about my life in Japan or just want some movie &

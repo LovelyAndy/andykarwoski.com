@@ -1,8 +1,8 @@
 <template>
   <div class="component-wrapper">
-    <div class="pic-wrapper">
-      <img src="/imgs/profile-pic.jpg" alt="Profile Picture" class="pic" />
-      <div class="frame"></div>
+    <div class="_pic-wrapper">
+      <img src="/imgs/profile-pic.jpg" alt="Profile Picture" class="_pic" />
+      <div class="_frame"></div>
     </div>
   </div>
 </template>
@@ -23,25 +23,28 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/colors.sass'
-img
-  filter: saturate(0%)
-  &:hover
-    // cursor: pointer
-    filter: saturate(100%)
-    transition: all 500ms
+
 .component-wrapper
   max-width: 21rem
 
-.pic-wrapper
+._pic-wrapper
   position: relative
 
-.pic
+._pic
   position: relative
   z-index: 2
   max-width: 100%
+  filter: saturate(0%)
+  cursor: pointer
+  &:hover
+    filter: saturate(100%)
+    transition: all ease-in-out 500ms
+  &:not(:hover)
+    filter: saturate(0%)
+    transition: all ease-in-out 500ms
   // max-width: 29rem
   // max-height: 44.5rem
-.frame
+._frame
   position: absolute
   background: $c-gold
   top: -3.5%

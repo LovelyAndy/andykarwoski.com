@@ -16,6 +16,7 @@ export default {
 @import './css/colors.sass'
 @import './css/typography.sass'
 @import './css/breakpoints.scss'
+@import './css/global.sass'
 
 *,
 *::after,*::before

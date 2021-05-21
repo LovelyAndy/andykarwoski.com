@@ -22,10 +22,8 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
-@import '../../css/colors.sass'
 
 .component-wrapper
-  max-width: 21rem
 
 ._pic-wrapper
   position: relative

@@ -1,12 +1,14 @@
 <template>
-  <div class="hero">
-    <BaseLinks class="sns-links" />
-    <ProfilePicPF class="profile-pic" />
-    <img
-      src="svgs/main-sub-title.svg"
-      alt="Andy Karwoski Frontend Web Dev / Designer"
-      class="main-title"
-    />
+  <div class="section-outer hero">
+    <div class="section-inner">
+      <BaseLinks class="sns-links" />
+      <ProfilePicPF class="profile-pic" />
+      <img
+        src="svgs/main-sub-title.svg"
+        alt="Andy Karwoski Frontend Web Dev / Designer"
+        class="main-title"
+      />
+    </div>
   </div>
 </template>
 

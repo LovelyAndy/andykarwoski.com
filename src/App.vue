@@ -31,4 +31,14 @@ body
   max-width: 100%
   text-align: center
   background-color: $c-bg-white
+@include media('>=phone', '<=425px', 'retina2x')
+  body
+    background-color: #aea9
+
+@include media('>=425px', '<tablet')
+  body
+    background-color: #daa
+@include media('>=tablet', '<laptop')
+  body
+    background-color: #a3c3d9
 </style>

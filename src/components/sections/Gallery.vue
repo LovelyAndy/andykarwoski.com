@@ -31,6 +31,7 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
+@import '../../css/breakpoints.scss'
 .gallery-wrapper
   display: flex
   justify-content: center
@@ -52,4 +53,12 @@ export default {
     margin-bottom: 6.6rem
   &__fuji
     margin-left: 8rem
+
+// @include media('>=phone', '<=425px', 'retina2x')
+
+// @include media('>=425px', '<tablet')
+
+// @include media('>=tablet', '<laptop')
+
+// @include media('>=laptop')
 </style>

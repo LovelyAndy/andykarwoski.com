@@ -57,19 +57,14 @@ export default {
     align-items: center
     //border: 2px solid #ff9b85
 
-@include media('>=phone', '<=425px', 'retina2x')
-  .hero
-    border: 2px solid #ae72a9
+// @include media('>=phone', '<=425px', 'retina2x')
 
-@include media('>=425px', '<tablet')
-  .hero
-    border: 2px solid goldenrod
-@include media('>=tablet', '<laptop')
-  .hero
-    border: 2px solid #a3c3d9
+// @include media('>=425px', '<tablet')
 
-@include media('>=laptop')
-  .hero
+// @include media('>=tablet', '<laptop')
+
+// @include media('>=laptop')
+
     // border: 2px solid green
 // .title-els
 //   display: flex

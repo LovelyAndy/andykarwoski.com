@@ -26,6 +26,7 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
+@import '../../css/breakpoints.scss'
 .contact-wrapper
   padding: 1em 2em
 
@@ -41,4 +42,11 @@ export default {
   color: $c-blue
   border: 5px solid $c-red
   padding: 1.6rem 6.4rem
+// @include media('>=phone', '<=425px', 'retina2x')
+
+// @include media('>=425px', '<tablet')
+
+// @include media('>=tablet', '<laptop')
+
+// @include media('>=laptop')
 </style>

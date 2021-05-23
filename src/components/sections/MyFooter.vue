@@ -35,6 +35,7 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
+@import '../../css/breakpoints.scss'
 hr
   color: #e0e0e0
   position: absolute
@@ -69,4 +70,11 @@ hr
   color: $c-grey-light
 .footer-info_email
   color: $c-blue
+// @include media('>=phone', '<=425px', 'retina2x')
+
+// @include media('>=425px', '<tablet')
+
+// @include media('>=tablet', '<laptop')
+
+// @include media('>=laptop')
 </style>

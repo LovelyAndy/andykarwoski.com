@@ -26,6 +26,7 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
+@import '../../css/breakpoints.scss'
 .portfolio-wrapper
   padding: 1em 2em
 
@@ -33,4 +34,12 @@ export default {
 
 .pic
   padding: 0 1em
+
+// @include media('>=phone', '<=425px', 'retina2x')
+
+// @include media('>=425px', '<tablet')
+
+// @include media('>=tablet', '<laptop')
+
+// @include media('>=laptop')
 </style>

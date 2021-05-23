@@ -24,6 +24,8 @@ export default {
 @import '../../css/colors.sass'
 
 .component-wrapper
+  width: 100%
+  max-width: 21.5rem
 
 ._pic-wrapper
   position: relative
@@ -31,7 +33,7 @@ export default {
 ._pic
   position: relative
   z-index: 2
-  max-width: 100%
+  width: 100%
   filter: saturate(0%)
   cursor: pointer
   &:hover
@@ -71,6 +73,6 @@ export default {
 //     margin: 0
 //     max-width: 60%
 
-// // greater than large phone and smaller than desktop viewport
-// @include media('>=425', '<desktop')
+// // greater than large phone and smaller than laptop viewport
+// @include media('>=425', '<laptop')
 </style>

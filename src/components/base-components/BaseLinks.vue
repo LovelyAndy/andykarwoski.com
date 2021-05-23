@@ -1,16 +1,16 @@
 <template>
   <div class="component-wrapper">
     <div class="container">
-      <a href="https://www.linkedin.com/in/andrew-karwoski-b95689122/" target="_blank" class="icon"
+      <a href="https://www.linkedin.com/in/andrew-karwoski-b95689122/" target="_blank" class="_icon"
         ><img src="/svgs/linkedin.svg" alt="Linkedin Link"
       /></a>
-      <a href="https://github.com/LovelyAndy" target="_blank" class="icon"
+      <a href="https://github.com/LovelyAndy" target="_blank" class="_icon"
         ><img src="/svgs/github.svg" alt="Github Link"
       /></a>
-      <a href="https://medium.com/" target="_blank" class="icon"
+      <a href="https://medium.com/" target="_blank" class="_icon"
         ><img src="/svgs/medium.svg" alt="Medium Link"
       /></a>
-      <a href="#" target="_blank" class="icon"
+      <a href="#" target="_blank" class="_icon"
         ><img src="/svgs/dribbble.svg" alt="Dribbble Link"
       /></a>
     </div>
@@ -37,7 +37,7 @@ export default {
   flex-direction: row
 .container > * + *
   margin-left: .75em
-.icon
+._icon
+  width: clamp(3.1rem, 3.5667rem + 1.6667vw, 4.3rem)
   cursor: pointer
-  width: clamp(3.1rem, 2.5667rem + 1.6667vw, 4.3rem)
 </style>

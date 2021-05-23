@@ -96,9 +96,9 @@ export default {
   // &:before
   //   content: 'large phone viewport'
 
-@include media('>=tablet', '<desktop')
+@include media('>=tablet', '<laptop')
   .dev-page-wrapper
     background-color: #a3c3d9
   // &:before
-  //   content: 'greater than tab and smaller than desktop viewport'
+  //   content: 'greater than tab and smaller than laptop viewport'
 </style>

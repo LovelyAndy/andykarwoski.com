@@ -1,9 +1,7 @@
 <template>
-  <div class="component-wrapper">
-    <div class="_pic-wrapper">
-      <img src="/imgs/street-corner.jpg" alt="Street Corner in Setagaya, Tokyo" class="_pic" />
-      <div class="_frame"></div>
-    </div>
+  <div class="_pic-wrapper">
+    <img src="/imgs/street-corner.jpg" alt="Street Corner in Setagaya, Tokyo" class="_pic" />
+    <div class="_frame"></div>
   </div>
 </template>
 
@@ -23,31 +21,30 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 
-.component-wrapper
 ._pic-wrapper
   position: relative
   width: 100%
   max-width: 30.4rem
 
-._pic
-  position: relative
-  z-index: 2
-  max-width: 100%
-  filter: saturate(0%)
-  cursor: pointer
-  &:hover
-    filter: saturate(100%)
-    transition: all ease-in-out 500ms
-  &:not(:hover)
+  ._pic
+    position: relative
+    z-index: 2
+    max-width: 100%
     filter: saturate(0%)
-    transition: all ease-in-out 500ms
+    cursor: pointer
+    &:hover
+      filter: saturate(100%)
+      transition: all ease-in-out 500ms
+    &:not(:hover)
+      filter: saturate(0%)
+      transition: all ease-in-out 500ms
 
 ._frame
   position: absolute
   background: $c-gold
   top: -5.5%
-  bottom: 4.5%
-  left: -4%
-  right: 5.5%
+  bottom: 5.5%
+  left: 4%
+  right: -3.5%
   z-index: 1
 </style>

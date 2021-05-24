@@ -31,6 +31,10 @@ body
   max-width: 100%
   text-align: center
   background-color: $c-bg-white
+
+h1
+  margin: 0
+  padding: 0
 @include media('>=phone', '<=425px', 'retina2x')
   body
     background-color: #aea9

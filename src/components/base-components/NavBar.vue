@@ -1,14 +1,18 @@
 <template>
-  <nav>
-    <ul class="links">
-      <li class="links__link t-navbar"><a class="red" href="#" v-scroll-to="'#about'">About</a></li>
-      <li class="links__link t-navbar">
-        <a class="blue" href="#" v-scroll-to="'#portfolio'">Portfolio</a>
-      </li>
-      <li class="links__link t-navbar">
-        <a class="gold" href="#" v-scroll-to="'#contact'">Contact</a>
-      </li>
-    </ul>
+  <nav class="section-outer navbar">
+    <div class="section-inner">
+      <ul class="_links">
+        <li class="_links__link t-navbar">
+          <a class="red _link" href="#" v-scroll-to="'#about'">About</a>
+        </li>
+        <li class="_links__link t-navbar">
+          <a class="blue _link" href="#" v-scroll-to="'#portfolio'">Portfolio</a>
+        </li>
+        <li class="_links__link t-navbar">
+          <a class="gold _link" href="#" v-scroll-to="'#contact'">Contact</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 
@@ -28,22 +32,19 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
-nav
-  display: flex
-  justify-content: flex-end
+.navbar
   padding: 1em 0
   width: 100%
   height: auto
-  .links
+  ._links
     display: flex
     justify-content: flex-end
     align-items: flex-end
     width: 100%
-    margin: 0 1.5em
     &__link
       font-weight: 600
       list-style: none
-    a
+    ._link
       text-decoration: none
       &.red
         color: $c-red
@@ -51,11 +52,12 @@ nav
         color: $c-blue
       &.gold
         color: $c-gold
-.links__link
-  &+ .links__link
+._links__link
+  &+ ._links__link
     margin-left: 1em
 
 @include media ('<tablet')
-  nav
+  .navbar
     padding-right: 1em
+// @include media ('>=tablet')
 </style>

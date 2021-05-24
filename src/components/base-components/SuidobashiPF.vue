@@ -26,8 +26,9 @@ export default {
 .component-wrapper
 
 ._pic-wrapper
-  position: relative
+  width: 100%
   max-width: 29rem
+  position: relative
 
 ._pic
   position: relative

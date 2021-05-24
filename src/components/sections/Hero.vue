@@ -38,6 +38,7 @@ export default {
 
 ._main-title
   padding: 0em 2.8em
+  max-width: 76rem
   width: 100%
   // width: clamp(26rem, 50vw, 78rem)
   z-index: 2

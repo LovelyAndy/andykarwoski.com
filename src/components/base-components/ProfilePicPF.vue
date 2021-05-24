@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'FromFujiPF',
+  name: 'ProfilePicPF',
   props: {},
   data() {
     return {}
@@ -24,10 +24,10 @@ export default {
 @import '../../css/colors.sass'
 
 .component-wrapper
-  width: 100%
-  max-width: 21.5rem
 
 ._pic-wrapper
+  width: 100%
+  max-width: 21.5rem
   position: relative
 
 ._pic
@@ -42,8 +42,7 @@ export default {
   &:not(:hover)
     filter: saturate(0%)
     transition: all ease-in-out 500ms
-  // max-width: 29rem
-  // max-height: 44.5rem
+
 ._frame
   position: absolute
   background: $c-gold
@@ -52,27 +51,4 @@ export default {
   left: -5.5%
   right: 5.5%
   z-index: 1
-
-// //phone viewport
-// @include media('<=phone')
-//   .dev-page-wrapper
-//     background-color: #ff9b54
-//   .img--profile
-//     justify-self: center
-//     align-self: center
-//     margin: 0
-//     max-width: 60%
-
-// //large phone viewport
-// @include media('>=phone', '<=425px', 'retina2x')
-//   .dev-page-wrapper
-//     background-color: #ae76a6
-//   .img--profile
-//     justify-self: center
-//     align-self: center
-//     margin: 0
-//     max-width: 60%
-
-// // greater than large phone and smaller than laptop viewport
-// @include media('>=425', '<laptop')
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div id="about" class="about-wrapper">
-    <div class="col">
+  <div id="about" class="section-outer about-wrapper">
+    <div class="col section-inner">
       <SectionTitle title="about" fontColor="red" lineColor="blue" />
       <div class="_text">
         <p class="t-body">
@@ -17,8 +17,8 @@
           I’ve also started a <span>blog</span> about my life from the busy streets of Tokyo, to my
           dive into the vast ocean of programming if you’re into that sort of thing.
         </p>
-        <SuidobashiPF class="_pic" />
       </div>
+      <SuidobashiPF class="_pic" />
     </div>
   </div>
 </template>
@@ -45,21 +45,17 @@ export default {
 .about-wrapper
   padding: 1em 2em
 span
+  cursor: pointer
   color: $c-red
 // p
 //   margin: .5em
 //   padding: 0em
 
 ._text
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  & > *
-    text-align: left
-.t-body
   text-align: left
+
 ._pic
+  align-self: center
   padding: 2em 0
 
 // @include media('>=phone', '<=425px', 'retina2x')
@@ -68,5 +64,7 @@ span
 
 // @include media('>=tablet', '<laptop')
 
-// @include media('>=laptop')
+@include media('>=laptop')
+  ._text
+    padding: 0 5em
 </style>

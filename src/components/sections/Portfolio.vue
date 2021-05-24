@@ -1,11 +1,14 @@
 <template>
-  <div id="portfolio" class="portfolio-wrapper">
-    <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
-    <p class="contact-bottom-text t-section-title-md">
-      Check out my <span>resume</span> or take a look at my linkedin for more information!
-    </p>
-    <StreetCornerPF class="pic" />
-  </div>
+<div id="portfolio" class="section-outer portfolio-wrapper">
+    <div class="col section-inner">
+        <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
+        <p class="_text__bottom-text t-section-title-md">
+          Check out my <span>resume</span> or take a look at my linkedin for more information!
+        </p>
+        <StreetCornerPF class="_pic" />
+      </div>
+    </div>
+</div>
 </template>
 
 <script>
@@ -28,12 +31,13 @@ export default {
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
 .portfolio-wrapper
-  padding: 1em 2em
 
-.contact-bottom-text
+._text
+  &__bottom-text
+    padding: 1em 2em
 
-.pic
-  padding: 0 1em
+._pic
+  align-self: center
 
 // @include media('>=phone', '<=425px', 'retina2x')
 

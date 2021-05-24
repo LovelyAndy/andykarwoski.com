@@ -1,8 +1,8 @@
 <template>
   <div class="component-wrapper">
-    <div :class="[`section-title_${fontColor}`, 't-section-title-lg']">
+    <h1 :class="[`section-title_${fontColor}`, 't-section-title-lg']">
       {{ title }}
-    </div>
+    </h1>
     <hr :class="`${lineColor}`" />
 
     <!-- <div v-if="fontColor === blue" class="section-title_blue t-section-title-lg">
@@ -39,10 +39,11 @@ export default {
   flex-direction: column
 hr
   width: 100%
+  height: 4px
   &.blue
-    border: 3px solid $c-blue
+    background-color: $c-blue
   &.red
-    border: 3px solid $c-red
+    background-color: $c-red
 
 .section-title_red
   margin-right: auto

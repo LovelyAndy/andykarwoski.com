@@ -24,10 +24,10 @@ export default {
 @import '../../css/colors.sass'
 
 .component-wrapper
-  max-width: 30.4rem
-
 ._pic-wrapper
   position: relative
+  width: 100%
+  max-width: 30.4rem
 
 ._pic
   position: relative

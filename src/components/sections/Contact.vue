@@ -1,18 +1,22 @@
 <template>
-  <div id="contact" class="contact-wrapper">
-    <SectionTitle title="contact" fontColor="red" lineColor="blue" />
-    <p class="contact-text t-body">
-      If you like my projects, want to hear more about my life in Japan or just want some movie &
-      music recommendations shoot me a message!
-    </p>
-    <p class="contact-btn t-section-title-lg">let's talk!</p>
+  <div id="contact" class="section-outer contact">
+    <div class="col section-inner">
+      <SectionTitle title="contact" fontColor="red" lineColor="blue" />
+      <p class="_text t-body">
+        If you like my projects, want to hear more about my life in Japan or just want some movie &
+        music recommendations shoot me a message!
+      </p>
+      <p class="contact-btn t-section-title-lg">let's talk!</p>
+      <StreetCornerPF class="_pic" />
+    </div>
   </div>
 </template>
 
 <script>
 import SectionTitle from '../base-components/SectionTitle.vue'
+import StreetCornerPF from '../base-components/StreetCornerPF.vue'
 export default {
-  components: { SectionTitle },
+  components: { SectionTitle, StreetCornerPF },
   name: 'Contact',
   props: {},
   data() {
@@ -27,12 +31,12 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
-.contact-wrapper
-  padding: 1em 2em
+.contact
 
-.contact-text
-  text-align: center
-  color: black
+._text
+  text-align: left
+  color: $c-bg-black
+  padding: 1em 2em
 
 .contact-btn
   display: flex
@@ -42,7 +46,11 @@ export default {
   color: $c-blue
   border: 5px solid $c-red
   padding: 1.6rem 6.4rem
-// @include media('>=phone', '<=425px', 'retina2x')
+._pic
+  align-self: center
+@include media('<=phone')
+  ._text
+    padding: 0
 
 // @include media('>=425px', '<tablet')
 

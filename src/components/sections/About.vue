@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="section-outer about-wrapper">
+  <div id="about" class="section-outer about">
     <div class="col section-inner">
       <SectionTitle title="about" fontColor="red" lineColor="blue" />
       <div class="_text">
@@ -42,8 +42,7 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
-.about-wrapper
-  padding: 1em 2em
+.about
 span
   cursor: pointer
   color: $c-red
@@ -53,12 +52,14 @@ span
 
 ._text
   text-align: left
+  padding: 1em 2em
 
 ._pic
   align-self: center
   padding: 2em 0
-
-// @include media('>=phone', '<=425px', 'retina2x')
+@include media('<=phone')
+  ._text
+    padding: 0
 
 // @include media('>=425px', '<tablet')
 

@@ -34,8 +34,8 @@ export default {
 @import '../../css/breakpoints.scss'
 .navbar
   padding: 1em 0
+  padding-right: 1em
   width: 100%
-  height: auto
   ._links
     display: flex
     justify-content: flex-end
@@ -55,9 +55,18 @@ export default {
 ._links__link
   &+ ._links__link
     margin-left: 1em
+ul
+  padding: 0
 
-@include media ('<tablet')
+@include media('<=phone')
   .navbar
-    padding-right: 1em
+    padding: 0
+    width: 100%
+    ._links
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 10em
+
 // @include media ('>=tablet')
 </style>

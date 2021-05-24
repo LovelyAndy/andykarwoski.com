@@ -32,6 +32,11 @@ body
   text-align: center
   color: $c-bg-black
   background-color: $c-bg-white
+a
+  text-decoration: none
+li
+  list-style: none
+  text-decoration: none
 
 h1
   margin: 0

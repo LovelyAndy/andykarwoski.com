@@ -5,8 +5,8 @@
     <About />
     <Portfolio />
     <Contact />
-    <!-- <Gallery />
-    <MyFooter /> -->
+    <!-- <Gallery />-->
+    <MyFooter />
   </div>
 </template>
 

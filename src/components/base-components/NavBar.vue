@@ -1,5 +1,5 @@
 <template>
-  <nav class="section-outer navbar">
+  <nav id="home" class="section-outer navbar">
     <div class="section-inner">
       <ul class="_links">
         <li class="_links__link t-navbar">
@@ -34,7 +34,7 @@ export default {
 @import '../../css/breakpoints.scss'
 .navbar
   padding: 1em 0
-  padding-right: 1em
+  padding-right: 12vw
   width: 100%
   ._links
     display: flex
@@ -58,7 +58,7 @@ export default {
 ul
   padding: 0
 
-@include media('<=phone')
+@include media('<tablet')
   .navbar
     padding: 0
     width: 100%

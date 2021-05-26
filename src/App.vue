@@ -27,7 +27,6 @@ html
   font-size: 62.5%
 body
   margin: 0
-  padding: 2em 0
   max-width: 100%
   text-align: center
   color: $c-bg-black
@@ -43,9 +42,9 @@ h1
   padding: 0
 @include media('<=phone')
   body
-    background-color: #aea9
+    // background-color: #aea9
 
-@include media('>=425px', '<tablet')
+@include media('>phone','<=tablet')
   body
     background-color: #daa
 @include media('>=tablet', '<laptop')

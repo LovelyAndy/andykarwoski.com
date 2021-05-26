@@ -32,7 +32,7 @@ export default {
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
 .contact
-
+  padding-bottom: 2em
 ._text
   text-align: left
   color: $c-bg-black

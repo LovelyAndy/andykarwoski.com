@@ -9,6 +9,7 @@
       <img src="../../public/svgs/mds-phones.svg" alt="" />
       <template v-slot:details> <p>something something something</p> </template>
     </ProjectOutline>
+    <TechStack />
     <!-- <NavBar /> -->
     <!-- <Gallery /> -->
     <!-- <About /> -->
@@ -42,6 +43,7 @@ import Gallery from '../components/sections/Gallery.vue'
 import NavBar from '../components/base-components/NavBar.vue'
 import Hero from '../components/sections/Hero.vue'
 import ProjectOutline from '../components/base-components/ProjectOutline.vue'
+import TechStack from '../components/base-components/TechStack.vue'
 
 export default {
   name: 'DevPage',
@@ -57,6 +59,7 @@ export default {
     NavBar,
     Hero,
     ProjectOutline,
+    TechStack,
   },
   props: {},
   data() {

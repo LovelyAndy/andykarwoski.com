@@ -1,6 +1,13 @@
 <template>
   <div class="dev-page-wrapper">
-    <ProjectOutline title="My Dad's Shit" titleLocation="bottom" />
+    <ProjectOutline
+      title="My Dad's Shit"
+      titleLocation="bottom"
+      frameColor="red"
+      frameLocation="top-left"
+    >
+      <img src="../../public/svgs/mds-phones.svg" alt="" />
+    </ProjectOutline>
     <!-- <NavBar /> -->
     <!-- <Gallery /> -->
     <!-- <About /> -->
@@ -68,7 +75,7 @@ export default {
   display: flex
   flex-direction: column
   justify-content: flex-end
-  padding: 5rem 2em
+  padding: 5rem 5em
   // align-items: center
   // width: 100vw
   // height: 100vh

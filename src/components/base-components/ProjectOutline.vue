@@ -1,11 +1,14 @@
 <template>
   <div class="project-wrapper">
-    <div class="_main-backdrop">
+    <div class="_content-main">
       <div :class="[`_title-${titleLocation}`, 't-project-title', '_title']">
         {{ title }}
       </div>
+      <div class="_content _content-text">
+        <slot />
+      </div>
     </div>
-    <div :class="`_frame-${frameLocation}`"></div>
+    <div :class="[`_frame-${frameLocation}`, `_frame-${frameColor}`]"></div>
   </div>
 </template>
 
@@ -15,7 +18,7 @@ export default {
   props: {
     title: { type: String },
     titleLocation: { type: String, default: 'top' },
-    frameColor: { type: String },
+    frameColor: { type: String, default: 'red' },
     frameLocation: { type: String, default: 'top-left' },
   },
   data() {
@@ -32,12 +35,13 @@ export default {
 @import '../../css/breakpoints.scss'
 .project-wrapper
   position: relative
-._main-backdrop
+._content-main
   width: 100%
   width: 27.6rem
   height: 27.6rem
   position: relative
   background-color: $c-grey
+  z-index: 2
   ._title
     position: absolute
     background-color: $c-black
@@ -54,12 +58,42 @@ export default {
     bottom: 0
     text-align: right
 
+._content
+  padding: 2em
+
+._frame-red
+  background: $c-red
+._frame-blue
+  background: $c-blue
+._frame-gold
+  background: $c-gold
+
 ._frame-top-left
   position: absolute
-  background: $c-red
   width: 27.6rem
   height: 27.6rem
   top: -4%
   left: -3%
+  z-index: 1
+._frame-top-right
+  position: absolute
+  width: 27.6rem
+  height: 27.6rem
+  top: -4%
+  left: 3%
+  z-index: -1
+._frame-bottom-left
+  position: absolute
+  width: 27.6rem
+  height: 27.6rem
+  bottom: -5%
+  left: -4%
+  z-index: -1
+._frame-bottom-right
+  position: absolute
+  width: 27.6rem
+  height: 27.6rem
+  bottom: -5%
+  left: 4%
   z-index: -1
 </style>

@@ -1,11 +1,12 @@
 <template>
   <div class="dev-page-wrapper">
-    <NavBar />
+    <ProjectOutline title="My Dad's Shit" titleLocation="bottom" />
+    <!-- <NavBar /> -->
     <!-- <Gallery /> -->
     <!-- <About /> -->
     <!-- <BaseLinks />-->
     <!-- <Hero /> -->
-    <ProfilePicPF class="img--profile" />
+    <!-- <ProfilePicPF class="img--profile" /> -->
     <!-- <br />
     <br />
     <br />
@@ -32,6 +33,7 @@ import About from '../components/sections/About.vue'
 import Gallery from '../components/sections/Gallery.vue'
 import NavBar from '../components/base-components/NavBar.vue'
 import Hero from '../components/sections/Hero.vue'
+import ProjectOutline from '../components/base-components/ProjectOutline.vue'
 
 export default {
   name: 'DevPage',
@@ -46,6 +48,7 @@ export default {
     Gallery,
     NavBar,
     Hero,
+    ProjectOutline,
   },
   props: {},
   data() {
@@ -65,7 +68,7 @@ export default {
   display: flex
   flex-direction: column
   justify-content: flex-end
-  padding: 0rem 2em
+  padding: 5rem 2em
   // align-items: center
   // width: 100vw
   // height: 100vh

@@ -35,7 +35,7 @@ export default {
   padding-bottom: 2em
 ._text
   text-align: left
-  color: $c-bg-black
+  color: $c-black
   padding: 1em 2em
 
 .contact-btn

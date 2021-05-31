@@ -29,7 +29,7 @@ body
   margin: 0
   max-width: 100%
   text-align: center
-  color: $c-bg-black
+  color: $c-black
   background-color: $c-bg-white
 a
   text-decoration: none

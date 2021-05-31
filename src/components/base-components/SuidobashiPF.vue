@@ -22,9 +22,9 @@ export default {
 @import '../../css/colors.sass'
 
 ._pic-wrapper
+  position: relative
   max-width: 29rem
   width: 100%
-  position: relative
 
   ._pic
     position: relative

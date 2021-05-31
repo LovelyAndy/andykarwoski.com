@@ -1,11 +1,16 @@
 <template>
-  <div class="project-wrapper">
+  <div class="project-wrapper" @mouseover="hover = true" @mouseleave="hover = false">
     <div class="_content-main">
       <div :class="[`_title-${titleLocation}`, 't-project-title', '_title']">
         {{ title }}
       </div>
-      <div class="_content _content-text">
+      <div class="_project">
         <slot />
+      </div>
+    </div>
+    <div v-if="hover" :class="{ _overlay: hover }">
+      <div class="_project-details">
+        <slot name="details"></slot>
       </div>
     </div>
     <div :class="[`_frame-${frameLocation}`, `_frame-${frameColor}`]"></div>
@@ -22,7 +27,9 @@ export default {
     frameLocation: { type: String, default: 'top-left' },
   },
   data() {
-    return {}
+    return {
+      hover: false,
+    }
   },
   computed: {},
   methods: {},
@@ -36,6 +43,7 @@ export default {
 .project-wrapper
   position: relative
 ._content-main
+  position: relative
   width: 100%
   width: 27.6rem
   height: 27.6rem
@@ -58,7 +66,23 @@ export default {
     bottom: 0
     text-align: right
 
-._content
+._overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 27.6rem
+  height: 27.6rem
+  opacity: .9
+  transition: .5s ease
+  background-color: $c-black
+  z-index: 3
+
+// ._content-main
+//   &:hover
+//     ._overlay
+//       opacity: 1
+
+._project
   padding: 2em
 
 ._frame-red

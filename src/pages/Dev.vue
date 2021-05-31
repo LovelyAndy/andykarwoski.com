@@ -7,6 +7,7 @@
       frameLocation="top-left"
     >
       <img src="../../public/svgs/mds-phones.svg" alt="" />
+      <template v-slot:details> <p>something something something</p> </template>
     </ProjectOutline>
     <!-- <NavBar /> -->
     <!-- <Gallery /> -->
@@ -79,6 +80,9 @@ export default {
   // align-items: center
   // width: 100vw
   // height: 100vh
+p
+  font-size: 4em
+  color: white
 
 // .img--profile
 //   margin-left: 5em

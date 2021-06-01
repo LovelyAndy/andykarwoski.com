@@ -78,7 +78,6 @@ export default {
   width: 27.6rem
   height: 27.6rem
   opacity: 1
-  transition: .5s ease
   background: rgba(51, 51, 51, .95)
   color: $c-bg-white
   z-index: 3

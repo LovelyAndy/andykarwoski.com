@@ -2,6 +2,7 @@
   <div id="portfolio" class="section-outer portfolio">
     <div class="col section-inner">
       <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
+      <ProjectMDS />
       <p class="_text__bottom-text t-section-title-md">
         Check out my <span>resume</span> or take a look at my linkedin for more information!
       </p>
@@ -11,8 +12,9 @@
 
 <script>
 import SectionTitle from '../base-components/SectionTitle.vue'
+import ProjectMDS from '../projects/ProjectMDS.vue'
 export default {
-  components: { SectionTitle },
+  components: { SectionTitle, ProjectMDS },
   name: 'Portfolio',
   props: {},
   data() {

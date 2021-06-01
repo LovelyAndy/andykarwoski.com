@@ -1,29 +1,33 @@
 <template>
-  <ProjectOutline
-    title="My Dad's Shit"
-    titleLocation="bottom"
-    frameColor="red"
-    frameLocation="top-left"
-  >
-    <img src="/svgs/mds-phones.svg" alt="My Dad's Shit App on phone display" />
-    <template v-slot:details>
-      <div class="t-project-details _project-details_text">
-        An inventory app that provides users a way to smartly keep track of items in their home.
-        <br />
-        <br />
-        Launched to both iOS and Android in June of 2021.
-      </div>
-      <TechStack html css sass vuejs firebase capacitor class="_tech-stack" />
-    </template>
-  </ProjectOutline>
+  <div>
+    <ProjectOutline
+      title="My Dad's Shit"
+      titleLocation="bottom"
+      frameColor="red"
+      frameLocation="top-left"
+    >
+      <img src="/svgs/mds-phones.svg" alt="My Dad's Shit App on phone display" />
+      <template v-slot:details>
+        <div class="t-project-details _project-details_text">
+          An inventory app that provides users a way to smartly keep track of items in their home.
+          <br />
+          <br />
+          Launched to both iOS and Android in June of 2021.
+        </div>
+        <TechStack html css sass vuejs firebase capacitor class="_tech-stack" />
+      </template>
+    </ProjectOutline>
+    <ProjectLinks website github />
+  </div>
 </template>
 
 <script>
 import ProjectOutline from '../base-components/ProjectOutline.vue'
 import TechStack from '../base-components/TechStack.vue'
+import ProjectLinks from '../base-components/ProjectLinks.vue'
 
 export default {
-  components: { ProjectOutline, TechStack },
+  components: { ProjectOutline, TechStack, ProjectLinks },
   name: 'ProjectMDS',
   props: {},
   data() {

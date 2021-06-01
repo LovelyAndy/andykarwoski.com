@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      hover: false,
+      hover: true,
     }
   },
   computed: {},
@@ -41,13 +41,12 @@ export default {
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
 .project-wrapper
+  display: inline-block
   position: relative
 ._content-main
   position: relative
-  width: 100%
   width: 27.6rem
   height: 27.6rem
-  position: relative
   background-color: $c-grey
   z-index: 2
   ._title
@@ -66,24 +65,28 @@ export default {
     bottom: 0
     text-align: right
 
+// ._content-main
+//   &:hover
+//     ._overlay
+//       opacity: 1
+._project
+  padding: 2em
 ._overlay
   position: absolute
   top: 0
   left: 0
   width: 27.6rem
   height: 27.6rem
-  opacity: .9
+  opacity: 1
   transition: .5s ease
-  background-color: $c-black
+  background: rgba(51, 51, 51, .95)
+  color: $c-bg-white
   z-index: 3
-
-// ._content-main
-//   &:hover
-//     ._overlay
-//       opacity: 1
-
-._project
-  padding: 2em
+._project-details
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-around
 
 ._frame-red
   background: $c-red

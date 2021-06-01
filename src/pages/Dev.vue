@@ -1,15 +1,6 @@
 <template>
   <div class="dev-page-wrapper">
-    <ProjectOutline
-      title="My Dad's Shit"
-      titleLocation="bottom"
-      frameColor="red"
-      frameLocation="top-left"
-    >
-      <img src="../../public/svgs/mds-phones.svg" alt="" />
-      <template v-slot:details> <p>something something something</p> </template>
-    </ProjectOutline>
-    <TechStack />
+    <ProjectMDS />
     <!-- <NavBar /> -->
     <!-- <Gallery /> -->
     <!-- <About /> -->
@@ -43,7 +34,7 @@ import Gallery from '../components/sections/Gallery.vue'
 import NavBar from '../components/base-components/NavBar.vue'
 import Hero from '../components/sections/Hero.vue'
 import ProjectOutline from '../components/base-components/ProjectOutline.vue'
-import TechStack from '../components/base-components/TechStack.vue'
+import ProjectMDS from '../components/projects/ProjectMDS.vue'
 
 export default {
   name: 'DevPage',
@@ -59,7 +50,7 @@ export default {
     NavBar,
     Hero,
     ProjectOutline,
-    TechStack,
+    ProjectMDS,
   },
   props: {},
   data() {
@@ -76,16 +67,14 @@ export default {
 @import '../css/breakpoints.scss'
 
 .dev-page-wrapper
-  display: flex
-  flex-direction: column
-  justify-content: flex-end
+  display: inline-block
+  // display: flex
+  // flex-direction: column
+  // justify-content: flex-end
   padding: 5rem 5em
   // align-items: center
   // width: 100vw
   // height: 100vh
-p
-  font-size: 4em
-  color: white
 
 // .img--profile
 //   margin-left: 5em

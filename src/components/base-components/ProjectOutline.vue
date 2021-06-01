@@ -88,7 +88,7 @@ export default {
 //     ._overlay
 //       opacity: 1
 ._project
-  padding: 2em
+  padding: 4em 2em
 ._overlay
   position: absolute
   top: 0

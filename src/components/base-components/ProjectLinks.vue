@@ -46,7 +46,7 @@ export default {
 @import '../../css/breakpoints.scss'
 .project-links
   justify-content: center
-  margin-top: 2em
+  margin-top: 1.5em
 
   ._icon
     cursor: pointer
@@ -60,4 +60,8 @@ export default {
     cursor: pointer
   ._website
     margin-right: 3em
+
+@include media('<=phone')
+  .project-links
+    margin-bottom: 4em
 </style>

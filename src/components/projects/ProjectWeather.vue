@@ -1,17 +1,17 @@
 <template>
   <div>
     <ProjectOutline
-      title="doubledstumpgrinding.com"
-      titleLocation="left"
+      title="Weather Boy"
+      titleLocation="right"
       frameColor="blue"
-      frameLocation="top-right"
+      frameLocation="bottom-left"
     >
       <img src="/svgs/weather-boy-site.svg" alt="Weather Boy site image" class="_project-display" />
       <template v-slot:details>
         <div class="t-project-details _project-details_text">
           Simple weather app built in vanilla JS, utilizing the OpenWeatherMap API.
         </div>
-        <TechStack html css sass class="_tech-stack" />
+        <TechStack html css js class="_tech-stack" />
       </template>
     </ProjectOutline>
     <ProjectLinks
@@ -47,12 +47,13 @@ export default {
 
 ._project-display
   width: 18em
-  margin-left: 5em
+  margin-right: 5.5em
 ._project-details_text
-  padding: 0 1em
+  padding: 2em 1em
   text-align: left
 ._tech-stack
   display: flex
-  justify-content: center
+  justify-content: space-around
   align-items: center
+  padding: 0 5em
 </style>

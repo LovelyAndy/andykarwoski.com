@@ -4,7 +4,8 @@
       title="doubledstumpgrinding.com"
       titleLocation="top"
       frameColor="gold"
-      frameLocation="bottom-left"
+      frameLocation="bottom-right"
+      titleSmall
     >
       <img
         src="/svgs/stump-site-img.svg"
@@ -59,6 +60,7 @@ export default {
   text-align: left
 ._tech-stack
   display: flex
-  justify-content: center
+  justify-content: space-around
   align-items: center
+  padding: 0 2em
 </style>

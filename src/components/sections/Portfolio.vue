@@ -2,9 +2,11 @@
   <div id="portfolio" class="section-outer portfolio">
     <div class="col section-inner">
       <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
-      <ProjectMDS />
-      <ProjectStump />
-      <ProjectWeather />
+      <div class="_projects">
+        <ProjectMDS />
+        <ProjectStump />
+        <ProjectWeather />
+      </div>
       <p class="_text__bottom-text t-section-title-md">
         Check out my <span>resume</span> or take a look at my linkedin for more information!
       </p>
@@ -35,6 +37,8 @@ export default {
 @import '../../css/breakpoints.scss'
 .portfolio
 
+._projects
+  margin: 4em 0
 ._text
   &__bottom-text
     padding: 1em 2em

@@ -1,7 +1,13 @@
 <template>
   <div class="project-wrapper" @mouseover="hover = true" @mouseleave="hover = false">
     <div class="_content-main">
-      <div :class="[`_title-${titleLocation}`, 't-project-title', '_title']">
+      <div
+        v-if="titleSmall"
+        :class="[`_title-${titleLocation}`, 't-project-title', '_title-small']"
+      >
+        {{ title }}
+      </div>
+      <div v-else :class="[`_title-${titleLocation}`, 't-project-title', '_title']">
         {{ title }}
       </div>
       <div class="_project">
@@ -25,6 +31,7 @@ export default {
     titleLocation: { type: String, default: 'top' },
     frameColor: { type: String, default: 'red' },
     frameLocation: { type: String, default: 'top-left' },
+    titleSmall: { type: Boolean, default: false },
   },
   data() {
     return {
@@ -55,6 +62,14 @@ export default {
     background-color: $c-black
     color: $c-bg-white
     padding: .75em
+    overflow: hidden
+  ._title-small
+    position: absolute
+    background-color: $c-black
+    color: $c-bg-white
+    font-size: 1.8rem
+    padding: 1em
+    overflow: hidden
   ._title-top
     top: 0
     left: 0
@@ -73,10 +88,10 @@ export default {
     transform-origin: 0 0
     transform: rotate(90deg)
     text-transform: rotate(90deg)
-    // This needs to be fixed
+    // This needs to be fixed ^^^
   ._title-right
     top: 0
-    right: -11.5em
+    right: -100%
     width: 100%
     text-align: left
     transform-origin: 0 0

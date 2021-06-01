@@ -17,7 +17,12 @@
         <TechStack html css sass vuejs firebase capacitor class="_tech-stack" />
       </template>
     </ProjectOutline>
-    <ProjectLinks website github />
+    <ProjectLinks
+      website
+      github
+      :websiteLink="'https://stackoverflow.com/questions/34842284/vue-js-giving-a-value-to-a-href-in-a-a-tag'"
+      :githubLink="'https://github.com/LovelyAndy/MyDadsShit'"
+    />
   </div>
 </template>
 

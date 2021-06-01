@@ -43,6 +43,7 @@ export default {
 .project-wrapper
   display: inline-block
   position: relative
+  cursor: pointer
 ._content-main
   position: relative
   width: 27.6rem
@@ -53,7 +54,7 @@ export default {
     position: absolute
     background-color: $c-black
     color: $c-bg-white
-    padding: 1em
+    padding: .75em
   ._title-top
     top: 0
     left: 0
@@ -64,6 +65,23 @@ export default {
     right: 0
     bottom: 0
     text-align: right
+  ._title-left
+    top: 0
+    left: 2.65em
+    width: 100%
+    text-align: left
+    transform-origin: 0 0
+    transform: rotate(90deg)
+    text-transform: rotate(90deg)
+    // This needs to be fixed
+  ._title-right
+    top: 0
+    right: -11.5em
+    width: 100%
+    text-align: left
+    transform-origin: 0 0
+    transform: rotate(90deg)
+    text-transform: rotate(90deg)
 
 // ._content-main
 //   &:hover

@@ -4,6 +4,7 @@
       <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
       <ProjectMDS />
       <ProjectStump />
+      <ProjectWeather />
       <p class="_text__bottom-text t-section-title-md">
         Check out my <span>resume</span> or take a look at my linkedin for more information!
       </p>
@@ -15,8 +16,9 @@
 import SectionTitle from '../base-components/SectionTitle.vue'
 import ProjectMDS from '../projects/ProjectMDS.vue'
 import ProjectStump from '../projects/ProjectStump.vue'
+import ProjectWeather from '../projects/ProjectWeather.vue'
 export default {
-  components: { SectionTitle, ProjectMDS, ProjectStump },
+  components: { SectionTitle, ProjectMDS, ProjectStump, ProjectWeather },
   name: 'Portfolio',
   props: {},
   data() {

@@ -46,9 +46,6 @@ export default {
 span
   cursor: pointer
   color: $c-red
-// p
-//   margin: .5em
-//   padding: 0em
 
 ._text
   text-align: left
@@ -56,7 +53,7 @@ span
 
 ._pic
   align-self: center
-  padding: 2em 0
+  margin: 2em 0
 @include media('<=phone')
   ._text
     padding: 0

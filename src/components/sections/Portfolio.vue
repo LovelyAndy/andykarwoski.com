@@ -35,7 +35,6 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
-.portfolio
 
 ._projects
   margin: 4em 0

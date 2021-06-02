@@ -16,10 +16,16 @@
     </div>
     <!-- try a transition here -->
     <!-- separate transitions to both the bg and content. bg is fade in and content is move up or down or whatever -->
-    <transition>
+    <transition
+      enter-active-class="animate__animated animate__fadeIn"
+      leave-active-class="animate__animated animate__fadeOut"
+    >
       <div v-if="show" class="_overlay-bg"></div>
     </transition>
-    <transition>
+    <transition
+      enter-active-class="animate__animated animate__fadeInDown animate__slow"
+      leave-active-class="animate__animated animate__fadeOutDown animate__slow"
+    >
       <div v-if="show" class="_overlay-content">
         <div class="_project-details">
           <slot name="details"></slot>
@@ -58,10 +64,14 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
+
 .project-wrapper
   display: inline-block
   position: relative
   cursor: pointer
+  // overflow: hidden
+  // this hides the frame as well, but I need just the hover effected items to hide the overflow
+
 ._content-main
   position: relative
   width: 27.6rem
@@ -110,6 +120,7 @@ export default {
 
 ._project
   padding: 4em 2em
+
 ._overlay-bg,
 ._overlay-content
   position: absolute

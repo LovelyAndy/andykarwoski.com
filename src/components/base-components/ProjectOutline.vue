@@ -15,12 +15,14 @@
       </div>
     </div>
     <!-- try a transition here -->
-    <div v-if="hover" class="_overlay">
+    <!-- separate transitions to both the bg and content. bg is fade in and content is move up or down or whatever -->
+    <div v-if="hover" class="_overlay-bg"></div>
+    <div v-if="hover" class="_overlay-content">
       <div class="_project-details">
         <slot name="details"></slot>
       </div>
     </div>
-    <div :class="[`_frame-${frameLocation}`, `_frame-${frameColor}`]"></div>
+    <div :class="[`_framing-${frameLocation}`, `_framing-${frameColor}`]"></div>
   </div>
 </template>
 
@@ -37,7 +39,7 @@ export default {
   },
   data() {
     return {
-      hover: false,
+      hover: true,
     }
   },
   computed: {},
@@ -106,51 +108,54 @@ export default {
 //       opacity: 1
 ._project
   padding: 4em 2em
-._overlay
+._overlay-bg,
+._overlay-content
   position: absolute
   top: 0
   left: 0
-  width: 27.6rem
-  height: 27.6rem
-  opacity: 1
-  background: rgba(51, 51, 51, .95)
-  color: $c-bg-white
+  right: 0
+  bottom: 0
+._overlay-bg
   z-index: 3
+  background: rgba(51, 51, 51, .95)
+._overlay-content
+  z-index: 4
+  color: $c-bg-white
 ._project-details
   height: 100%
   display: flex
   flex-direction: column
   justify-content: space-around
 
-._frame-red
+._framing-red
   background: $c-red
-._frame-blue
+._framing-blue
   background: $c-blue
-._frame-gold
+._framing-gold
   background: $c-gold
 
-._frame-top-left
+._framing-top-left
   position: absolute
   width: 27.6rem
   height: 27.6rem
   top: -1.25em
   left: -1.25em
   z-index: 1
-._frame-top-right
+._framing-top-right
   position: absolute
   width: 27.6rem
   height: 27.6rem
   top: -1.25em
   left: 1.25em
   z-index: -1
-._frame-bottom-left
+._framing-bottom-left
   position: absolute
   width: 27.6rem
   height: 27.6rem
   bottom: -1.25em
   left: -1.25em
   z-index: -1
-._frame-bottom-right
+._framing-bottom-right
   position: absolute
   width: 27.6rem
   height: 27.6rem

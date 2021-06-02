@@ -1,7 +1,6 @@
 _<template>
-  <div class="_pic-wrapper">
+  <div class="_pic-wrapper frame-gold-bl">
     <img src="/imgs/suidobashi.jpg" alt="Suidobashi, Tokyo Photo" class="_pic" />
-    <div class="_frame"></div>
   </div>
 </template>
 
@@ -38,13 +37,4 @@ export default {
     &:not(:hover)
       filter: saturate(0%)
       transition: all ease-in-out 500ms
-
-._frame
-  position: absolute
-  background: $c-gold
-  top: 10%
-  bottom: 4.5%
-  left: -3.5%
-  right: 5.5%
-  z-index: 1
 </style>

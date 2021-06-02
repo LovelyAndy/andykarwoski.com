@@ -30,3 +30,35 @@
 .section-inner
   width: 100%
   max-width: 1200px
+
+// picture frames
+[class*="frame-"]
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+.frame-gold-tl-tall::before
+  background: $c-gold
+  height: 88%
+  top: .85em
+  left: -1.25em
+  bottom: -1.25em
+.frame-gold-tl::before
+  background: $c-gold
+  top: -1.25em
+  left: -1.25em
+.frame-gold-bl::before
+  background: $c-gold
+  bottom: -1.25em
+  left: -1.25em
+.frame-gold-tr::before
+  background: $c-gold
+  top: -1.25em
+  right: -1.25em
+.frame-gold-br::before
+  background: $c-gold
+  bottom: -1.25em
+  right: -1.25em

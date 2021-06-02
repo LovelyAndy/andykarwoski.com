@@ -1,7 +1,6 @@
 <template>
-  <div class="_pic-wrapper">
+  <div class="pic-wrapper frame-gold-tl-tall">
     <img src="/imgs/profile-pic.jpg" alt="Profile Picture" class="_pic" />
-    <div class="_frame"></div>
   </div>
 </template>
 
@@ -21,7 +20,7 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 
-._pic-wrapper
+.pic-wrapper
   position: relative
   width: 100%
   max-width: 21.5rem
@@ -38,14 +37,4 @@ export default {
     &:not(:hover)
       filter: saturate(0%)
       transition: all ease-in-out 500ms
-
-  ._frame
-    position: absolute
-    background: $c-gold
-    width: 100%
-    top: .75em
-    bottom: 3.5em
-    left: -1.25em
-    right: 1.25em
-    z-index: 1
 </style>

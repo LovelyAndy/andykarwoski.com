@@ -1,11 +1,11 @@
 <template>
   <div id="portfolio" class="section-outer portfolio">
-    <div class="col section-inner">
+    <div class="col section-inner portfolio_wrapper">
       <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
       <div class="_projects">
-        <ProjectMDS />
-        <ProjectStump />
-        <ProjectWeather />
+        <ProjectMDS class="_mds" />
+        <ProjectStump class="_stump" />
+        <ProjectWeather class="_weather" />
       </div>
       <p class="_text__bottom-text t-section-title-md">
         Check out my <span>resume</span> or take a look at my linkedin for more information!
@@ -48,8 +48,11 @@ export default {
     &__bottom-text
       padding: 0
 
-// @include media('>=425px', '<tablet')
-
+@include media('>phone', '<tablet')
+  .portfolio_wrapper
+    ._mds
+    ._stump
+    ._weather
 // @include media('>=tablet', '<laptop')
 
 // @include media('>=laptop')

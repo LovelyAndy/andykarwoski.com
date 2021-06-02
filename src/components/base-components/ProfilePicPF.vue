@@ -39,12 +39,13 @@ export default {
       filter: saturate(0%)
       transition: all ease-in-out 500ms
 
-._frame
-  position: absolute
-  background: $c-gold
-  top: 2.5%
-  bottom: 10%
-  left: -5%
-  right: 5%
-  z-index: 1
+  ._frame
+    position: absolute
+    background: $c-gold
+    width: 100%
+    top: .75em
+    bottom: 3.5em
+    left: -1.25em
+    right: 1.25em
+    z-index: 1
 </style>

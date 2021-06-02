@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      hover: true,
+      hover: false,
     }
   },
   computed: {},
@@ -131,28 +131,28 @@ export default {
   position: absolute
   width: 27.6rem
   height: 27.6rem
-  top: -4%
-  left: -3%
+  top: -1.25em
+  left: -1.25em
   z-index: 1
 ._frame-top-right
   position: absolute
   width: 27.6rem
   height: 27.6rem
-  top: -4%
-  left: 3%
+  top: -1.25em
+  left: 1.25em
   z-index: -1
 ._frame-bottom-left
   position: absolute
   width: 27.6rem
   height: 27.6rem
-  bottom: -5%
-  left: -4%
+  bottom: -1.25em
+  left: -1.25em
   z-index: -1
 ._frame-bottom-right
   position: absolute
   width: 27.6rem
   height: 27.6rem
-  bottom: -5%
-  left: 4%
+  bottom: -1.25em
+  left: 1.25em
   z-index: -1
 </style>

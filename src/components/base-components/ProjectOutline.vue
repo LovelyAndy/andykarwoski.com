@@ -1,5 +1,5 @@
 <template>
-  <div class="project-wrapper" @mouseover="hover = true" @mouseleave="hover = false">
+  <div class="project-wrapper" @mouseover="show = true" @mouseleave="show = false">
     <div class="_content-main">
       <div
         v-if="titleSmall"
@@ -16,12 +16,16 @@
     </div>
     <!-- try a transition here -->
     <!-- separate transitions to both the bg and content. bg is fade in and content is move up or down or whatever -->
-    <div v-if="hover" class="_overlay-bg"></div>
-    <div v-if="hover" class="_overlay-content">
-      <div class="_project-details">
-        <slot name="details"></slot>
+    <transition>
+      <div v-if="show" class="_overlay-bg"></div>
+    </transition>
+    <transition>
+      <div v-if="show" class="_overlay-content">
+        <div class="_project-details">
+          <slot name="details"></slot>
+        </div>
       </div>
-    </div>
+    </transition>
     <div :class="[`_framing-${frameLocation}`, `_framing-${frameColor}`]"></div>
   </div>
 </template>
@@ -32,14 +36,17 @@ export default {
   props: {
     title: { type: String },
     // add all options to these props
+    /** options: 'bottom', 'top', 'left', 'right'   */
     titleLocation: { type: String, default: 'top' },
+    /** options: 'red', 'blue', 'gold'   */
     frameColor: { type: String, default: 'red' },
+    /** options: 'bottom-left', 'top-left', 'bottom-right', 'top-right'   */
     frameLocation: { type: String, default: 'top-left' },
     titleSmall: { type: Boolean, default: false },
   },
   data() {
     return {
-      hover: true,
+      show: false,
     }
   },
   computed: {},
@@ -92,7 +99,6 @@ export default {
     transform-origin: 0 0
     transform: rotate(-90deg) translateX(-100%)
     text-transform: rotate(-90deg)
-    // This needs to be fixed ^^^
   ._title-right
     top: 0
     right: -100%
@@ -102,10 +108,6 @@ export default {
     transform: rotate(90deg)
     text-transform: rotate(90deg)
 
-// ._content-main
-//   &:hover
-//     ._overlay
-//       opacity: 1
 ._project
   padding: 4em 2em
 ._overlay-bg,
@@ -162,4 +164,23 @@ export default {
   bottom: -1.25em
   left: 1.25em
   z-index: -1
+
+// //transitions
+// .fade-enter-active,
+// .fade-leave-active
+//   transition: opacity 1.5s
+
+// .fade-enter,
+// .fade-leave-to
+//   opacity: 0
+
+// .slide-up-leave-active,
+// .slide-up-enter-active
+//   transition: 1s
+
+// .slide-up-enter
+//   transform: translate(0, 10%)
+
+// .slide-up-leave-to
+//   transform: translate(0, -50%)
 </style>

@@ -49,10 +49,12 @@ export default {
       padding: 0
 
 @include media('>phone', '<tablet')
-  .portfolio_wrapper
-    ._mds
-    ._stump
-    ._weather
+
+  ._mds,
+  ._stump,
+  ._weather
+    transform: scale(1.2)
+    margin: 8em
 // @include media('>=tablet', '<laptop')
 
 // @include media('>=laptop')

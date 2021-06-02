@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'Project Links',
+  name: 'ProjectLinks',
   props: {
     website: { type: Boolean, default: false },
     websiteLink: { type: String },

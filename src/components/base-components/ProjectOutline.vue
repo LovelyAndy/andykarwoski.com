@@ -14,7 +14,8 @@
         <slot />
       </div>
     </div>
-    <div v-if="hover" :class="{ _overlay: hover }">
+    <!-- try a transition here -->
+    <div v-if="hover" class="_overlay">
       <div class="_project-details">
         <slot name="details"></slot>
       </div>
@@ -28,6 +29,7 @@ export default {
   name: 'ProjectOutline',
   props: {
     title: { type: String },
+    // add all options to these props
     titleLocation: { type: String, default: 'top' },
     frameColor: { type: String, default: 'red' },
     frameLocation: { type: String, default: 'top-left' },
@@ -82,12 +84,12 @@ export default {
     text-align: right
   ._title-left
     top: 0
-    left: 2.65em
+    left: 0
     width: 100%
     text-align: left
     transform-origin: 0 0
-    transform: rotate(90deg)
-    text-transform: rotate(90deg)
+    transform: rotate(-90deg) translateX(-100%)
+    text-transform: rotate(-90deg)
     // This needs to be fixed ^^^
   ._title-right
     top: 0

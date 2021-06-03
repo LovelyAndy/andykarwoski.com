@@ -1,5 +1,6 @@
 <template>
   <div class="project-wrapper" @mouseover="show = true" @mouseleave="show = false">
+    <div :class="[`_framing-${frameLocation}`, `_framing-${frameColor}`, '_no-overflow']"></div>
     <div class="_content-main">
       <div
         v-if="titleSmall"
@@ -23,8 +24,8 @@
       <div v-if="show" class="_overlay-bg"></div>
     </transition>
     <transition
-      enter-active-class="animate__animated animate__fadeInDown animate__slow"
-      leave-active-class="animate__animated animate__fadeOutDown animate__slow"
+      enter-active-class="animate__animated animate__fadeIn"
+      leave-active-class="animate__animated animate__fadeOut"
     >
       <div v-if="show" class="_overlay-content">
         <div class="_project-details">
@@ -32,7 +33,6 @@
         </div>
       </div>
     </transition>
-    <div :class="[`_framing-${frameLocation}`, `_framing-${frameColor}`]"></div>
   </div>
 </template>
 

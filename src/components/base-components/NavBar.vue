@@ -55,8 +55,6 @@ export default {
 ._links__link
   &+ ._links__link
     margin-left: 1em
-ul
-  padding: 0
 
 @include media('<tablet')
   .navbar
@@ -66,7 +64,6 @@ ul
       display: flex
       justify-content: center
       align-items: center
-      margin-right: 10em
 
 // @include media ('>=tablet')
 </style>

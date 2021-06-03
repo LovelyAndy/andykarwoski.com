@@ -1,5 +1,5 @@
 <template>
-  <div class="pic-wrapper frame-gold-tl-tall">
+  <div class="pic-wrapper frame-gold-tl">
     <img src="/imgs/profile-pic.jpg" alt="Profile Picture" class="_pic" />
   </div>
 </template>

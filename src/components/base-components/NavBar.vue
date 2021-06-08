@@ -37,6 +37,7 @@ export default {
   padding-right: 12vw
   width: 100%
   ._links
+    padding: 0
     display: flex
     justify-content: flex-end
     align-items: flex-end

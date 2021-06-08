@@ -42,7 +42,7 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
-.about
+
 span
   cursor: pointer
   color: $c-red

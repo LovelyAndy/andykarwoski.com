@@ -1,5 +1,5 @@
 <template>
-  <div class="section-outer">
+  <div class="section-outer hero-outer">
     <div class="col center section-inner hero">
       <img
         src="svgs/main-sub-title.svg"
@@ -42,10 +42,10 @@ export default {
   padding: 0
 
 ._main-title
-  padding: 0em 2.8em
   max-width: 85em
   width: 100%
   z-index: 10
+  pointer-events: none
 
 ._profile-pic
   transform: scale(.9)
@@ -72,26 +72,27 @@ export default {
     display: none
 
 @include media('>=tablet', '<=1024px')
+  .hero-outer
+    margin-bottom: 8em
   .hero
     position: relative
-    min-height: 55vh
-    margin-bottom: 8em
+    min-height: 55em
     ._main-title
       position: absolute
-      left: 10em
+      left: 9em
       max-width: 60em
     ._sns-links
       bottom: 7em
       left: 27em
     ._profile-pic
       top: 5em
-      left: -4em
+      left: -8em
     ._fuji
       bottom: -8em
       left: -4em
     ._street
-      top: 2em
-      right: 1em
+      top: 3em
+      right: -3em
     ._suidobashi
       bottom: -12em
       right: -1em
@@ -106,40 +107,42 @@ export default {
 @include media('>1024px', '<laptop')
   .hero
     position: relative
-    height: 55vh
+    min-height: 55em
     margin-bottom: 12em
     ._main-title
       position: absolute
-      max-width: 65em
+      left: 15em
+      max-width: 70em
     ._sns-links
       bottom: 6em
     ._profile-pic
       top: 4em
-      left: 1em
+      left: -3em
     ._fuji
       bottom: -12em
-      left: 2em
+      left: 0em
     ._street
       top: 4em
-      right: 6em
+      right: 0em
     ._suidobashi
       bottom: -15em
-      right: 3em
+      right: 1em
     ._sns-links,
     ._profile-pic,
     ._fuji,
     ._street,
     ._suidobashi
       position: absolute
-      transform: scale(.9)
+      // transform: scale(.9)
 
 @include media('>=laptop', '<desktop')
   .hero
     position: relative
-    min-height: 50vh
+    min-height: 50em
     margin-bottom: 22em
     ._main-title
       position: absolute
+      left: 22em // add this to all queries
       max-width: 80em
     ._sns-links
       bottom: 0em
@@ -151,11 +154,11 @@ export default {
       left: 5em
     ._street
       top: -1em
-      right: 5em
+      right: 2em
       z-index: 12
     ._suidobashi
       bottom: -23em
-      right: 8em
+      right: 5em
     ._sns-links,
     ._profile-pic,
     ._fuji,
@@ -166,10 +169,10 @@ export default {
 @include media('>=desktop')
   .hero
     position: relative
-    min-height: 50vh
-    margin-bottom: 20em
+    min-height: 60em
     ._main-title
       position: absolute
+      left: 20em
       max-width: 85em
     ._sns-links
       bottom: 0em

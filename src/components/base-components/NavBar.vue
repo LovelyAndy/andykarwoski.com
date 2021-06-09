@@ -85,7 +85,7 @@ export default {
 
 @include media('>=desktop')
   .navbar
-    padding: 5em 0
-    padding-right: 0
+    padding-top: 5em
+    padding-bottom: 8em
     width: 100%
 </style>

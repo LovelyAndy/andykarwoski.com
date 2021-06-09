@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <NavBar />
-    <Hero />
+    <NavBar class="_navbar" />
+    <Hero class="_hero" />
     <About />
     <Portfolio />
     <Contact />
@@ -26,13 +26,20 @@ export default {
 </script>
 <style lang="sass"scoped>
 @import '../css/colors.sass'
+@import '../css/breakpoints.scss'
+
 .home
   display: flex
   flex-direction: column
   justify-content: center
   align-items: stretch
   // > *
-  //   margin-bottom: 10em
-  // ._nav-bar
-  //   margin-bottom: 10em
+  //   margin-bottom: 20em
+@include media('>=desktop')
+  .home
+    > *
+    ._navbar
+      margin-bottom: 5em
+    ._hero
+      margin-bottom: 25em
 </style>

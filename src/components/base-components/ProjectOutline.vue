@@ -23,16 +23,18 @@
     >
       <div v-if="show" class="_overlay-bg"></div>
     </transition>
-    <transition
-      enter-active-class="animate__animated animate__fadeIn"
-      leave-active-class="animate__animated animate__fadeOut"
-    >
-      <div v-if="show" class="_overlay-content">
-        <div class="_project-details">
-          <slot name="details"></slot>
+    <div class="_try">
+      <transition
+        enter-active-class="animate__animated animate__fadeInDown"
+        leave-active-class="animate__animated animate__fadeOutUp"
+      >
+        <div v-if="show" class="_overlay-content">
+          <div class="_project-details">
+            <slot name="details"></slot>
+          </div>
         </div>
-      </div>
-    </transition>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -69,9 +71,14 @@ export default {
   display: inline-block
   position: relative
   cursor: pointer
-  // overflow: hidden
-  // this hides the frame as well, but I need just the hover effected items to hide the overflow
 
+._try
+  position: absolute
+  overflow: hidden
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
 ._content-main
   position: relative
   width: 27.6rem
@@ -121,8 +128,7 @@ export default {
 ._project
   padding: 4em 2em
 
-._overlay-bg,
-._overlay-content
+._overlay-bg
   position: absolute
   top: 0
   left: 0

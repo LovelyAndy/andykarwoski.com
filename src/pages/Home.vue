@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <NavBar class="nav-bar" />
+    <NavBar />
     <Hero />
     <About />
     <Portfolio />
@@ -31,6 +31,8 @@ export default {
   flex-direction: column
   justify-content: center
   align-items: stretch
-.nav-bar
-  width: 100%
+  // > *
+  //   margin-bottom: 10em
+  // ._nav-bar
+  //   margin-bottom: 10em
 </style>

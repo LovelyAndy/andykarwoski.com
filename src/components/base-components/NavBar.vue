@@ -33,7 +33,6 @@ export default {
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
 .navbar
-  padding: 1em 0
   padding-right: 12vw
   width: 100%
   ._links
@@ -60,11 +59,30 @@ export default {
 @include media('<tablet')
   .navbar
     padding: 0
+    padding-top: 2em
+    padding-bottom: 1em
     width: 100%
     ._links
       display: flex
       justify-content: center
       align-items: center
 
-// @include media ('>=tablet')
+@include media('>=tablet', '<=1024px')
+  .navbar
+    padding-top: 3em
+    padding-bottom: 1em
+    width: 100%
+
+@include media('>=laptop', '<desktop')
+  .navbar
+    padding-top: 3em
+    padding-bottom: 5em
+    padding-right: 0
+    width: 100%
+
+@include media('>=desktop')
+  .navbar
+    padding: 5em 0
+    padding-right: 0
+    width: 100%
 </style>

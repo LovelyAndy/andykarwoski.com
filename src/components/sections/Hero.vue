@@ -1,5 +1,5 @@
 <template>
-  <div class="section-outer hero-outer">
+  <div class="section-outer">
     <div class="col center section-inner hero">
       <img
         src="svgs/main-sub-title.svg"
@@ -58,12 +58,11 @@ export default {
     display: flex
     flex-direction: column
     align-items: center
-    margin-bottom: 4em
     ._main-title
       left: 10em
       min-width: 35em
   ._profile-pic
-    transform: scale(.8)
+    transform: scale(1)
   ._fuji
     display: none
   ._street
@@ -71,22 +70,51 @@ export default {
   ._suidobashi
     display: none
 
-@include media('>=tablet', '<=1024px')
-  .hero-outer
-    margin-bottom: 8em
+@include media('>=tablet', '<=900px')
+  .hero
+    position: relative
+    min-height: 45em
+    ._main-title
+      position: absolute
+      left: 7em
+      max-width: 60em
+    ._sns-links
+      bottom: 4em
+      left: 21em
+    ._profile-pic
+      top: 1em
+      left: -9em
+    ._fuji
+      bottom: -10em
+      left: -8em
+    ._street
+      top: 1em
+      right: -5em
+    ._suidobashi
+      bottom: -15em
+      right: -8em
+    ._sns-links,
+    ._profile-pic,
+    ._fuji,
+    ._street,
+    ._suidobashi
+      position: absolute
+      transform: scale(.7)
+@include media('>900px', '<=1024px')
   .hero
     position: relative
     min-height: 55em
+    margin-top: -3em
     ._main-title
       position: absolute
-      left: 9em
-      max-width: 60em
+      left: 6em
+      max-width: 65em
     ._sns-links
       bottom: 7em
-      left: 27em
+      left: 28em
     ._profile-pic
       top: 5em
-      left: -8em
+      left: -10.5em
     ._fuji
       bottom: -8em
       left: -4em
@@ -95,7 +123,7 @@ export default {
       right: -3em
     ._suidobashi
       bottom: -12em
-      right: -1em
+      right: -5em
     ._sns-links,
     ._profile-pic,
     ._fuji,
@@ -108,7 +136,6 @@ export default {
   .hero
     position: relative
     min-height: 55em
-    margin-bottom: 12em
     ._main-title
       position: absolute
       left: 15em
@@ -117,29 +144,28 @@ export default {
       bottom: 6em
     ._profile-pic
       top: 4em
-      left: -3em
+      left: -3.5em
+      transform: scale(1)
     ._fuji
       bottom: -12em
-      left: 0em
+      left: -3em
     ._street
-      top: 4em
+      top: 3em
       right: 0em
     ._suidobashi
-      bottom: -15em
-      right: 1em
+      bottom: -17em
+      right: -2em
     ._sns-links,
     ._profile-pic,
     ._fuji,
     ._street,
     ._suidobashi
       position: absolute
-      // transform: scale(.9)
 
 @include media('>=laptop', '<desktop')
   .hero
     position: relative
     min-height: 50em
-    margin-bottom: 22em
     ._main-title
       position: absolute
       left: 22em // add this to all queries

@@ -33,13 +33,21 @@ export default {
   flex-direction: column
   justify-content: center
   align-items: stretch
-  // > *
-  //   margin-bottom: 20em
-@include media('>=desktop')
-  .home
-    > *
-    ._navbar
-      margin-bottom: 5em
-    ._hero
-      margin-bottom: 25em
+._hero
+  margin-bottom: 10em
+@include media('>=900px', '<1024px')
+  ._navbar
+    margin-bottom: 0em
+  ._hero
+    margin-bottom: 8em
+@include media('>=1024px', '<laptop')
+  ._navbar
+    margin-bottom: 2em
+  ._hero
+    margin-bottom: 15em
+@include media('>=laptop')
+  ._navbar
+    margin-bottom: 2em
+  ._hero
+    margin-bottom: 20em
 </style>

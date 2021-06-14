@@ -2,7 +2,7 @@
   <div class="home">
     <NavBar class="_navbar" />
     <Hero class="_hero" />
-    <About />
+    <About class="_about" />
     <Portfolio />
     <Contact />
     <!-- <Gallery />-->
@@ -39,32 +39,46 @@ export default {
     margin-top: 2em
   ._hero
     margin-bottom: 1em
+  .about
+    margin-bottom: 2em
 
 @include media('>=tablet', '<=900px')
   ._hero
     margin-bottom: 10em
+  .about
+    margin-bottom: 2em
 @include media('>=900px', '<1024px')
   ._navbar
     margin-bottom: 0em
   ._hero
     margin-bottom: 8em
+  .about
+    margin-bottom: 2em
 @include media('>=1024px', '<laptop')
   ._navbar
     margin-bottom: 2em
   ._hero
     margin-bottom: 10em
+  .about
+    margin-bottom: 5em
 @include media('>=laptop')
   ._navbar
     margin-bottom: 2em
   ._hero
     margin-bottom: 20em
+  .about
+    margin-bottom: 5em
 
 @include media('>=laptop', '<desktop')
   ._navbar
     padding-bottom: 4em
   ._hero
     margin-bottom: 20em
+  .about
+    margin-bottom: 5em
 @include media('>desktop')
   .navbar
     padding-bottom: 4em
+  .about
+    margin-bottom: 5em
 </style>

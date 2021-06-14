@@ -54,9 +54,9 @@ span
 ._pic
   align-self: center
   margin: 2em 0
-@include media('<=phone')
-  ._text
-    padding: 0
+@include media('>tablet')
+  ._pic
+    display: none
 
 // @include media('>=425px', '<tablet')
 

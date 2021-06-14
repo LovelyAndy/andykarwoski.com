@@ -57,9 +57,6 @@ export default {
 
 @include media('<tablet')
   .navbar
-    padding: 0
-    padding-top: 2em
-    padding-bottom: 1em
     width: 100%
     ._links
       display: flex
@@ -80,12 +77,12 @@ export default {
 @include media('>=laptop', '<desktop')
   .navbar
     padding-top: 3em
-    padding-bottom: 7em
+    padding-bottom: 1em
     width: 100%
 
 @include media('>=desktop')
   .navbar
     padding-top: 5em
-    padding-bottom: 8em
+    padding-bottom: 1em
     width: 100%
 </style>

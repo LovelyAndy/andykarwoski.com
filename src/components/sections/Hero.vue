@@ -42,13 +42,9 @@ export default {
   padding: 0
 
 ._main-title
-  max-width: 85em
   width: 100%
   z-index: 10
   pointer-events: none
-
-._profile-pic
-  transform: scale(.9)
 
 ._sns-links
   padding: 0
@@ -59,10 +55,11 @@ export default {
     flex-direction: column
     align-items: center
     ._main-title
-      left: 10em
-      min-width: 35em
+      width: 100%
   ._profile-pic
-    transform: scale(1)
+    margin-top: 1em
+    margin-bottom: .5em
+    transform: scale(.9)
   ._fuji
     display: none
   ._street
@@ -82,7 +79,7 @@ export default {
       bottom: 4em
       left: 21em
     ._profile-pic
-      top: 1em
+      top: 2em
       left: -9em
     ._fuji
       bottom: -10em
@@ -104,17 +101,16 @@ export default {
   .hero
     position: relative
     min-height: 55em
-    margin-top: -3em
     ._main-title
       position: absolute
-      left: 6em
+      left: 8em
       max-width: 65em
     ._sns-links
       bottom: 7em
       left: 28em
     ._profile-pic
       top: 5em
-      left: -10.5em
+      left: -8.5em
     ._fuji
       bottom: -8em
       left: -4em
@@ -144,22 +140,22 @@ export default {
       bottom: 6em
     ._profile-pic
       top: 4em
-      left: -3.5em
-      transform: scale(1)
+      left: -2.5em
     ._fuji
-      bottom: -12em
+      bottom: -10em
       left: -3em
     ._street
       top: 3em
       right: 0em
     ._suidobashi
-      bottom: -17em
+      bottom: -15em
       right: -2em
     ._sns-links,
     ._profile-pic,
     ._fuji,
     ._street,
     ._suidobashi
+      transform: scale(.9)
       position: absolute
 
 @include media('>=laptop', '<desktop')
@@ -168,7 +164,7 @@ export default {
     min-height: 50em
     ._main-title
       position: absolute
-      left: 22em // add this to all queries
+      left: 22em
       max-width: 80em
     ._sns-links
       bottom: 0em
@@ -191,20 +187,20 @@ export default {
     ._street,
     ._suidobashi
       position: absolute
-      transform: scale(1.1)
+      transform: scale(1)
 @include media('>=desktop')
   .hero
     position: relative
-    min-height: 60em
+    min-height: 50em
     ._main-title
       position: absolute
       left: 20em
-      max-width: 85em
+      max-width: 80em
     ._sns-links
       bottom: 0em
     ._profile-pic
       top: 3em
-      left: 0em
+      left: 2em
     ._fuji
       bottom: -18em
       left: 5em
@@ -221,5 +217,5 @@ export default {
     ._street,
     ._suidobashi
       position: absolute
-      transform: scale(1.2)
+      transform: scale(1)
 </style>

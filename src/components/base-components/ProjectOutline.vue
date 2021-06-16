@@ -79,6 +79,7 @@ export default {
   left: 0
   right: 0
   bottom: 0
+  z-index: 5
 ._content-main
   position: relative
   width: 27.6rem
@@ -138,7 +139,7 @@ export default {
   z-index: 3
   background: rgba(51, 51, 51, .95)
 ._overlay-content
-  z-index: 4
+  padding-top: 2em
   color: $c-bg-white
 ._project-details
   height: 100%

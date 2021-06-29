@@ -7,9 +7,9 @@
         <ProjectStump class="_stump" />
         <ProjectWeather class="_weather" />
       </div>
-      <p class="_text__bottom-text t-section-title-md">
+      <div class="_text__bottom-text t-section-title-md">
         Check out my <span>resume</span> or take a look at my linkedin for more information!
-      </p>
+      </div>
     </div>
   </div>
 </template>
@@ -36,25 +36,49 @@ export default {
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
 
-._projects
-  margin: 4em 0
-._text
-  &__bottom-text
-    padding: 1em 2em
-
 @include media('<=phone')
-  ._text
-    &__bottom-text
-      padding: 0
+  ._projects
+    margin-top: 4em
+    ._mds,
+    ._stump,
+    ._weather
+      transform: scale(.95)
+  ._text__bottom-text
+    margin-top: 2em
 
-@include media('>phone', '<tablet')
+@include media('>phone', '<=tablet')
+  ._projects
+    margin-top: 10em
+    ._mds,
+    ._stump,
+    ._weather
+      transform: scale(1.2)
 
-  ._mds,
-  ._stump,
-  ._weather
-    transform: scale(1.2)
-    margin: 8em
-// @include media('>=tablet', '<laptop')
+    ._stump,
+    ._weather
+      margin-top: 12em
+  ._text__bottom-text
+    margin-top: 5em
+@include media('>tablet', '<laptop')
+  ._projects
+    margin-top: 16em
+    ._mds,
+    ._stump,
+    ._weather
+      transform: scale(1.5)
+
+    ._stump,
+    ._weather
+      margin-top: 25em
+
+    // ._mds,
+    // ._weather
+    //   margin-right: 12em
+    // ._stump
+    //   padding-left: 12em
+
+  ._text__bottom-text
+    margin-top: 5em
 
 // @include media('>=laptop')
 </style>

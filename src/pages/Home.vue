@@ -3,7 +3,7 @@
     <NavBar class="_navbar" />
     <Hero class="_hero" />
     <About class="_about" />
-    <Portfolio />
+    <Portfolio class="_portfolio" />
     <Contact />
     <!-- <Gallery />-->
     <MyFooter />
@@ -39,20 +39,25 @@ export default {
     margin-top: 2em
   ._hero
     margin-bottom: 1em
-  .about
-    margin-bottom: 2em
+  .about,
+  ._portfolio
+    margin-bottom: 4em
 
 @include media('>=tablet', '<900px')
   ._hero
     margin-bottom: 10em
-  .about
-    margin-bottom: 2em
+  .about,
+  ._portfolio
+    margin-bottom: 10em
+
 @include media('>=900px', '<1024px')
   ._navbar
     margin-bottom: 0em
   ._hero
     margin-bottom: 8em
   .about
+    margin-bottom: 2em
+  ._portfolio
     margin-bottom: 2em
 @include media('>=1024px', '<laptop')
   ._navbar

@@ -15,8 +15,6 @@
         <slot />
       </div>
     </div>
-    <!-- try a transition here -->
-    <!-- separate transitions to both the bg and content. bg is fade in and content is move up or down or whatever -->
     <transition
       enter-active-class="animate__animated animate__fadeIn"
       leave-active-class="animate__animated animate__fadeOut"
@@ -25,8 +23,8 @@
     </transition>
     <div class="_try">
       <transition
-        enter-active-class="animate__animated animate__fadeInDown"
-        leave-active-class="animate__animated animate__fadeOutUp"
+        enter-active-class="animate__animated animate__fadeInUp"
+        leave-active-class="animate__animated animate__fadeOutDown"
       >
         <div v-if="show" class="_overlay-content">
           <div class="_project-details">
@@ -82,8 +80,8 @@ export default {
   z-index: 5
 ._content-main
   position: relative
-  width: 27.6rem
-  height: 27.6rem
+  min-width: 27.6rem
+  min-height: 27.6rem
   background-color: $c-grey
   z-index: 2
   ._title
@@ -156,29 +154,29 @@ export default {
 
 ._framing-top-left
   position: absolute
-  width: 27.6rem
-  height: 27.6rem
+  min-width: 27.6rem
+  min-height: 27.6rem
   top: -1.25em
   left: -1.25em
   z-index: 1
 ._framing-top-right
   position: absolute
-  width: 27.6rem
-  height: 27.6rem
+  min-width: 27.6rem
+  min-height: 27.6rem
   top: -1.25em
   left: 1.25em
   z-index: -1
 ._framing-bottom-left
   position: absolute
-  width: 27.6rem
-  height: 27.6rem
+  min-width: 27.6rem
+  min-height: 27.6rem
   bottom: -1.25em
   left: -1.25em
   z-index: -1
 ._framing-bottom-right
   position: absolute
-  width: 27.6rem
-  height: 27.6rem
+  min-width: 27.6rem
+  min-height: 27.6rem
   bottom: -1.25em
   left: 1.25em
   z-index: -1

@@ -46,11 +46,11 @@ export default {
 @import '../../css/breakpoints.scss'
 .project-links
   justify-content: center
-  margin-top: 1.5em
+  margin-top: 2em
 
   ._icon
     cursor: pointer
-    width: clamp(2.4rem, 1.8857rem + 1.7143vw, 3.6rem)
+    width: clamp(2.4rem, 1.8857rem + 2vw, 3.6rem)
     margin-left: .5em
   ._github,
   ._website,
@@ -59,9 +59,5 @@ export default {
     color: $c-black
     cursor: pointer
   ._website
-    margin-right: 3em
-
-@include media('<=phone')
-  .project-links
-    margin-bottom: 4em
+    margin-right: 2em
 </style>

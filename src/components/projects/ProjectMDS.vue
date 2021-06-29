@@ -22,6 +22,7 @@
       github
       :websiteLink="'https://stackoverflow.com/questions/34842284/vue-js-giving-a-value-to-a-href-in-a-a-tag'"
       :githubLink="'https://github.com/LovelyAndy/MyDadsShit'"
+      class="_links"
     />
   </div>
 </template>
@@ -49,10 +50,11 @@ export default {
 @import '../../css/breakpoints.scss'
 
 ._project-details_text
-  padding: 0 1em
   text-align: left
 ._tech-stack
   display: flex
   justify-content: center
   align-items: center
+._links
+  margin-top: 1em
 </style>

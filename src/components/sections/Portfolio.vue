@@ -7,8 +7,19 @@
         <ProjectStump class="_stump" />
         <ProjectWeather class="_weather" />
       </div>
-      <div class="_text__bottom-text t-section-title-md">
-        Check out my <span>resume</span> or take a look at my linkedin for more information!
+      <div class="t-section-title-md _text__bottom-text">
+        Check out my
+        <a href="#" style="cursor: pointer; color: #fe4539" class="t-section-title-md red-underline"
+          >resume</a
+        >
+        or take a look at my
+        <a
+          href="#"
+          style="cursor: pointer; color: #4062bf"
+          class="t-section-title-md blue-underline"
+          >linkedin</a
+        >
+        for more information!
       </div>
     </div>
   </div>
@@ -37,6 +48,39 @@ export default {
 @import '../../css/breakpoints.scss'
 ._text__bottom-text
   padding: 0 1em
+._linkedin
+._resume
+
+// .red-underline
+//   display: inline-block
+//   position: relative
+//   &:before
+//     content: ''
+//     display: block
+//     position: absolute
+//     left: 0
+//     bottom: 0
+//     height: 4px
+//     width: 0
+//     transition: width 0s ease, background .5s ease
+//   &:after
+//     content: ''
+//     display: block
+//     position: absolute
+//     right: 0
+//     bottom: 0
+//     height: 4px
+//     width: 0
+//     background: #FE4539
+//     transition: width .5s ease
+//   &:hover:before
+//     width: 100%
+//     background: #FE4539
+//     transition: width .5s ease
+//   &:hover:after
+//     width: 100%
+//     background: transparent
+//     transition: all 0s ease
 
 @include media('<=phone')
   ._projects

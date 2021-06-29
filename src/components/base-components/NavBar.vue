@@ -3,13 +3,13 @@
     <div class="section-inner">
       <ul class="_links">
         <li class="_links__link t-navbar">
-          <a class="red _link" href="#" v-scroll-to="'#about'">About</a>
+          <a class="red _link red-underline" href="#" v-scroll-to="'#about'">About</a>
         </li>
         <li class="_links__link t-navbar">
-          <a class="blue _link" href="#" v-scroll-to="'#portfolio'">Portfolio</a>
+          <a class="blue _link blue-underline" href="#" v-scroll-to="'#portfolio'">Portfolio</a>
         </li>
         <li class="_links__link t-navbar">
-          <a class="gold _link" href="#" v-scroll-to="'#contact'">Contact</a>
+          <a class="gold _link gold-underline" href="#" v-scroll-to="'#contact'">Contact</a>
         </li>
       </ul>
     </div>

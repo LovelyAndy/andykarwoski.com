@@ -35,6 +35,8 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
+._text__bottom-text
+  padding: 0 1em
 
 @include media('<=phone')
   ._projects
@@ -78,7 +80,28 @@ export default {
     //   padding-left: 12em
 
   ._text__bottom-text
-    margin-top: 5em
+    margin-top: 3.5em
+    padding: 0 2em
 
-// @include media('>=laptop')
+@include media('>=laptop')
+  ._projects
+    margin-top: 16em
+    ._mds,
+    ._stump,
+    ._weather
+      transform: scale(1.5)
+
+    ._stump,
+    ._weather
+      margin-top: 25em
+
+    // ._mds,
+    // ._weather
+    //   margin-right: 12em
+    // ._stump
+    //   padding-left: 12em
+
+  ._text__bottom-text
+    margin-top: 3.5em
+    padding: 0 2em
 </style>

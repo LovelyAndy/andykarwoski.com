@@ -147,6 +147,7 @@ export default {
 
 ._framing-red
   background: $c-red
+
 ._framing-blue
   background: $c-blue
 ._framing-gold

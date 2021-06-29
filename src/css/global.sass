@@ -26,7 +26,10 @@
   justify-content: center
   padding-left: 12vw
   padding-right: 12vw
-
+@include media('<=phone')
+  .section-outer
+    padding-left: 6vw
+    padding-right: 6vw
 .section-inner
   width: 100%
   max-width: 1200px

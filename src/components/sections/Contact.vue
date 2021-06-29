@@ -6,7 +6,9 @@
         If you like my projects, want to hear more about my life in Japan or just want some movie &
         music recommendations shoot me a message!
       </p>
-      <p class="contact-btn t-section-title-lg">let's talk!</p>
+      <div class="_btn-wrapper">
+        <button class="_contact-btn t-section-title-lg">let's talk!</button>
+      </div>
       <StreetCornerPF class="_pic" />
     </div>
   </div>
@@ -31,30 +33,80 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
-.contact
-  padding-bottom: 2em
-._text
-  text-align: left
-  color: $c-black
-  padding: 1em 2em
 
-.contact-btn
+._text
+  text-align: center
+  color: $c-black
+._btn-wrapper
+  position: relative
   display: flex
-  flex-basis: 100%
   justify-content: center
   align-self: center
-  color: $c-blue
-  border: 5px solid $c-red
-  padding: 1.6rem 6.4rem
+  width: 100%$c-blue
+  &::before,
+  &::after
+    position: absolute
+    content: ""
+    width: 100%
+    height: 100%
+    z-index: -1
+    // border: 2px solid yellow;
+    transition: all .25s ease-out
+  &::before
+    background-color: $c-bg-white
+    border: .5rem solid $c-blue
+    top: -1.5rem
+    right: -1.5rem
+  &::after
+    background-color: $c-bg-white
+    border: .5rem solid $c-red
+    bottom: -1.5rem
+    left: -1.5rem
+  &:hover
+    transform: translateY(3px)
+    // box-shadow: 4px 14px 14px 0px rgba(0, 0, 0, 0.4)
+    &::before
+      top: 1.5rem
+      left: 1.5rem
+      background-color: $c-blue
+      // box-shadow: 5px 5px 15px rgba(64,98,191,.25)
+    &::after
+      bottom: 1.5rem
+      right: 1.5rem
+      background-color: $c-red
+      // box-shadow: -5px -5px 15px rgba(254,69,57,.25)
+  &:active
+    transform: translateY(-1px)
+    // box-shadow: 4px 8px 8px 0px rgba(0, 0, 0, 0.4)
+  ._contact-btn
+    color: $c-bg-white
+    background-color: $c-black
+    // border: 5px solid $c-red
+    width: 100%
+    padding: .5em .75em
+    &:hover
+      color: $c-gold
 ._pic
   align-self: center
+button
+  background: none
+  border: none
+  cursor: pointer
+
 @include media('<=phone')
-  ._text
-    padding: 0
 
-// @include media('>=425px', '<tablet')
+  ._btn-wrapper
+    margin-top: 5em
+  ._pic
+    margin-top: 4em
+@include media('>phone', '<=tablet')
+  ._pic
+    display: none
+@include media('>tablet', '<laptop')
+  ._pic
+    display: none
 
-// @include media('>=tablet', '<laptop')
-
-// @include media('>=laptop')
+@include media('>=laptop')
+  ._pic
+    display: none
 </style>

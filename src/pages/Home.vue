@@ -4,7 +4,7 @@
     <Hero class="_hero" />
     <About class="_about" />
     <Portfolio class="_portfolio" />
-    <Contact />
+    <Contact class="_contact" />
     <!-- <Gallery />-->
     <MyFooter />
   </div>
@@ -40,50 +40,60 @@ export default {
   ._hero
     margin-bottom: 1em
   .about,
-  ._portfolio
+  ._portfolio,
+  ._contact
     margin-bottom: 4em
 
 @include media('>=tablet', '<900px')
   ._hero
     margin-bottom: 10em
   .about,
-  ._portfolio
-    margin-bottom: 10em
+  ._portfolio,
+  ._contact
+    margin-bottom: 6em
 
 @include media('>=900px', '<1024px')
   ._navbar
     margin-bottom: 0em
   ._hero
     margin-bottom: 8em
-  .about
-    margin-bottom: 2em
-  ._portfolio
-    margin-bottom: 2em
+  .about,
+  ._portfolio,
+  ._contact
+    margin-bottom: 6em
 @include media('>=1024px', '<laptop')
   ._navbar
     margin-bottom: 2em
   ._hero
     margin-bottom: 10em
-  .about
-    margin-bottom: 5em
+  .about,
+  ._portfolio,
+  ._contact
+    margin-bottom: 6em
 @include media('>=laptop')
   ._navbar
     margin-bottom: 2em
   ._hero
     margin-bottom: 20em
-  .about
-    margin-bottom: 5em
+  .about,
+  ._portfolio,
+  ._contact
+    margin-bottom: 6em
 
 @include media('>=laptop', '<desktop')
   ._navbar
     padding-bottom: 4em
   ._hero
     margin-bottom: 20em
-  .about
-    margin-bottom: 5em
+  .about,
+  ._portfolio,
+  ._contact
+    margin-bottom: 6em
 @include media('>desktop')
   .navbar
     padding-bottom: 4em
-  .about
-    margin-bottom: 5em
+  .about,
+  ._portfolio,
+  ._contact
+    margin-bottom: 6em
 </style>

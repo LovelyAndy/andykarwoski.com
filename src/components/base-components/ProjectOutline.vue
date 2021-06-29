@@ -24,7 +24,7 @@
     <div class="_try">
       <transition
         enter-active-class="animate__animated animate__fadeInUp"
-        leave-active-class="animate__animated animate__fadeOutDown"
+        leave-active-class="animate__animated animate__fadeOutUp"
       >
         <div v-if="show" class="_overlay-content">
           <div class="_project-details">

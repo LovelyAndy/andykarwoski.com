@@ -3,9 +3,15 @@
     <div class="col section-inner portfolio_wrapper">
       <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
       <div class="_projects">
-        <ProjectMDS class="_mds" />
-        <ProjectStump class="_stump" />
-        <ProjectWeather class="_weather" />
+        <div class="_mds">
+          <ProjectMDS />
+        </div>
+        <div class="_stump">
+          <ProjectStump />
+        </div>
+        <div class="_weather">
+          <ProjectWeather />
+        </div>
       </div>
       <div class="t-section-title-md _text__bottom-text">
         Check out my
@@ -107,21 +113,26 @@ export default {
     margin-top: 5em
 @include media('>tablet', '<laptop')
   ._projects
-    margin-top: 16em
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    margin-top: 12em
     ._mds,
     ._stump,
     ._weather
-      transform: scale(1.5)
+      transform: scale(1.1)
+      // &:hover
+      //   transform: scale(1.5)
+      //   z-index: 10
 
-    ._stump,
-    ._weather
-      margin-top: 25em
-
-    // ._mds,
-    // ._weather
-    //   margin-right: 12em
+    // ._mds
+    //   margin-left: 12em
     // ._stump
-    //   padding-left: 12em
+    //   margin-top: 14em
+    // ._weather
+    //   margin-top: 24em
 
   ._text__bottom-text
     margin-top: 3.5em
@@ -129,21 +140,30 @@ export default {
 
 @include media('>=laptop')
   ._projects
-    margin-top: 16em
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    margin-top: 12em
     ._mds,
     ._stump,
     ._weather
       transform: scale(1.5)
+      // &:hover
+      //   transform: scale(1.5)
+      //   z-index: 10
 
-    ._stump,
+    ._mds
+      flex-basis: 100%
+      margin-top: 2em
+      margin-left: 15em
+    ._stump
+      margin-top: 24em
+      margin-left: 10em
     ._weather
-      margin-top: 25em
-
-    // ._mds,
-    // ._weather
-    //   margin-right: 12em
-    // ._stump
-    //   padding-left: 12em
+      margin-top: 30em
+      margin-right: 12em
 
   ._text__bottom-text
     margin-top: 3.5em

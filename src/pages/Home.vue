@@ -42,7 +42,7 @@ export default {
   .about
     margin-bottom: 2em
 
-@include media('>=tablet', '<=900px')
+@include media('>=tablet', '<900px')
   ._hero
     margin-bottom: 10em
   .about

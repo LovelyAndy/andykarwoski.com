@@ -51,6 +51,7 @@ export default {
 
 ._project-details_text
   text-align: left
+  padding: 0 1em
 ._tech-stack
   display: flex
   justify-content: center

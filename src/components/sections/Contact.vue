@@ -100,8 +100,11 @@ button
   ._pic
     margin-top: 4em
 @include media('>phone', '<=tablet')
+  ._btn-wrapper
+    margin-top: 6em
   ._pic
-    display: none
+    margin-top: 6em
+
 @include media('>tablet', '<laptop')
   ._pic
     display: none

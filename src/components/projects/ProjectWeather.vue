@@ -1,7 +1,7 @@
 <template>
   <div>
     <ProjectOutline
-      title="Weather Boy"
+      title="Weather Boyy"
       titleLocation="right"
       frameColor="blue"
       frameLocation="bottom-left"
@@ -11,7 +11,7 @@
         <div class="t-project-details _project-details_text">
           Simple weather app built in vanilla JS, utilizing the OpenWeatherMap API.
         </div>
-        <TechStack html css js class="_tech-stack" />
+        <TechStack html css js firebase class="_tech-stack" />
       </template>
     </ProjectOutline>
     <ProjectLinks
@@ -55,5 +55,5 @@ export default {
   display: flex
   justify-content: space-around
   align-items: center
-  padding: 0 5em
+  padding: 0 2em
 </style>

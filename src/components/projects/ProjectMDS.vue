@@ -12,7 +12,7 @@
           An inventory app that provides users a way to smartly keep track of items in their home.
           <br />
           <br />
-          Launched to both iOS and Android in June of 2021.
+          Launched to both iOS and Android in July of 2021.
         </div>
         <TechStack html css sass vuejs firebase capacitor class="_tech-stack" />
       </template>
@@ -50,12 +50,16 @@ export default {
 @import '../../css/breakpoints.scss'
 
 ._project-details_text
+  // display: flex
+  // justify-content: center
+  // align-items: center
   text-align: left
   padding: 0 1em
 ._tech-stack
   display: flex
   justify-content: center
   align-items: center
+  margin: 1em
 ._links
   margin-top: 1em
 </style>

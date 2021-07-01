@@ -54,39 +54,6 @@ export default {
 @import '../../css/breakpoints.scss'
 ._text__bottom-text
   padding: 0 1em
-._linkedin
-._resume
-
-// .red-underline
-//   display: inline-block
-//   position: relative
-//   &:before
-//     content: ''
-//     display: block
-//     position: absolute
-//     left: 0
-//     bottom: 0
-//     height: 4px
-//     width: 0
-//     transition: width 0s ease, background .5s ease
-//   &:after
-//     content: ''
-//     display: block
-//     position: absolute
-//     right: 0
-//     bottom: 0
-//     height: 4px
-//     width: 0
-//     background: #FE4539
-//     transition: width .5s ease
-//   &:hover:before
-//     width: 100%
-//     background: #FE4539
-//     transition: width .5s ease
-//   &:hover:after
-//     width: 100%
-//     background: transparent
-//     transition: all 0s ease
 
 @include media('<=phone')
   ._projects
@@ -94,49 +61,76 @@ export default {
     ._mds,
     ._stump,
     ._weather
-      transform: scale(.95)
+      margin-bottom: 3em
   ._text__bottom-text
     margin-top: 2em
 
 @include media('>phone', '<=tablet')
   ._projects
-    margin-top: 10em
-    ._mds,
-    ._stump,
-    ._weather
-      transform: scale(1.2)
-
-    ._stump,
-    ._weather
-      margin-top: 12em
-  ._text__bottom-text
-    margin-top: 5em
-@include media('>tablet', '<laptop')
-  ._projects
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    flex-wrap: wrap
-    width: 100%
-    margin-top: 12em
+    margin-top: 8em
     ._mds,
     ._stump,
     ._weather
       transform: scale(1.1)
-      // &:hover
-      //   transform: scale(1.5)
-      //   z-index: 10
+    ._mds
+      margin-right: 20em
 
-    // ._mds
-    //   margin-left: 12em
-    // ._stump
-    //   margin-top: 14em
-    // ._weather
-    //   margin-top: 24em
+    ._stump
+      margin-top: 8em
+      margin-left: 22em
+
+    ._weather
+      margin-top: 6em
+      margin-right: 18em
+  ._text__bottom-text
+    margin-top: 4em
+@include media('>tablet', '<=900px')
+  ._projects
+    margin-top: 12em
+    ._mds,
+    ._stump,
+    ._weather
+      transform: scale(1.2)
+    ._mds
+      margin-right: 25em
+
+    ._stump
+      margin-top: 12em
+      margin-left: 32em
+
+    ._weather
+      margin-top: 12em
+      margin-right: 22em
+  ._text__bottom-text
+    margin-top: 4em
 
   ._text__bottom-text
     margin-top: 3.5em
-    padding: 0 2em
+    padding: 0 3.75em
+
+@include media('>900px', '<=laptop')
+  ._projects
+    margin-top: 12em
+    ._mds,
+    ._stump,
+    ._weather
+      transform: scale(1.2)
+    ._mds
+      margin-right: 25em
+
+    ._stump
+      margin-top: 12em
+      margin-left: 32em
+
+    ._weather
+      margin-top: 12em
+      margin-right: 22em
+  ._text__bottom-text
+    margin-top: 4em
+
+  ._text__bottom-text
+    margin-top: 3.5em
+    padding: 0 3.75em
 
 @include media('>=laptop')
   ._projects

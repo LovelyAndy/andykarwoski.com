@@ -58,6 +58,8 @@ export default {
     display: flex
     color: $c-black
     cursor: pointer
+    &:hover
+      transform: scale(1.2)
   ._website
     margin-right: 2em
 </style>

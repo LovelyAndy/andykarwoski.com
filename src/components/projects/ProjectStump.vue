@@ -56,11 +56,12 @@ export default {
 ._project-display
   margin-top: 5em
 ._project-details_text
-  padding: 0 1em
   text-align: left
+  padding: .5em 1em
 ._tech-stack
   display: flex
   justify-content: space-around
   align-items: center
+  margin: 1em
   padding: 0 2em
 </style>

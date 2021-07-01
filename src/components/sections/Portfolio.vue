@@ -3,15 +3,11 @@
     <div class="col section-inner portfolio_wrapper">
       <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
       <div class="_projects">
-        <div class="_mds">
-          <ProjectMDS />
-        </div>
-        <div class="_stump">
-          <ProjectStump />
-        </div>
-        <div class="_weather">
-          <ProjectWeather />
-        </div>
+        <ProjectMDS class="_mds" />
+
+        <ProjectStump class="_stump" />
+
+        <ProjectWeather class="_weather" />
       </div>
       <div class="t-section-title-md _text__bottom-text">
         Check out my
@@ -54,6 +50,10 @@ export default {
 @import '../../css/breakpoints.scss'
 ._text__bottom-text
   padding: 0 1em
+// ._mds,
+// ._stump,
+// ._weather
+//   max-width: 45.5rem
 
 @include media('<=phone')
   ._projects
@@ -84,7 +84,7 @@ export default {
       margin-right: 18em
   ._text__bottom-text
     margin-top: 4em
-@include media('>tablet', '<=900px')
+@include media('>tablet', '<=1200px')
   ._projects
     margin-top: 12em
     ._mds,
@@ -108,58 +108,54 @@ export default {
     margin-top: 3.5em
     padding: 0 3.75em
 
-@include media('>900px', '<=laptop')
+@include media('>1200px', '<=laptop')
   ._projects
-    margin-top: 12em
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 24em
     ._mds,
     ._stump,
     ._weather
-      transform: scale(1.2)
+      transform: scale(1.5)
+
     ._mds
-      margin-right: 25em
-
+      margin-left: 15em
     ._stump
-      margin-top: 12em
-      margin-left: 32em
-
+      margin-top: 26em
+      margin-left: 10em
     ._weather
-      margin-top: 12em
-      margin-right: 22em
+      margin-top: 36em
+      margin-left: 20em
+
   ._text__bottom-text
     margin-top: 4em
+    padding: 0 2em
 
-  ._text__bottom-text
-    margin-top: 3.5em
-    padding: 0 3.75em
-
-@include media('>=laptop')
+@include media('>laptop', '<desktop')
   ._projects
     display: flex
     flex-direction: row
     justify-content: space-between
     flex-wrap: wrap
     width: 100%
-    margin-top: 12em
+    margin-top: 32em
     ._mds,
     ._stump,
     ._weather
-      transform: scale(1.5)
-      // &:hover
-      //   transform: scale(1.5)
-      //   z-index: 10
+      transform: scale(1.65)
 
     ._mds
-      flex-basis: 100%
-      margin-top: 2em
+      // flex-basis: 100%
       margin-left: 15em
     ._stump
-      margin-top: 24em
-      margin-left: 10em
+      margin-top: 28em
     ._weather
-      margin-top: 30em
-      margin-right: 12em
+      margin-top: 5em
+      margin-left: 12em
 
   ._text__bottom-text
-    margin-top: 3.5em
+    margin-top: 5em
     padding: 0 2em
 </style>

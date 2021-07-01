@@ -25,7 +25,7 @@
     <ProjectLinks
       website
       github
-      :websiteLink="'https://stackoverflow.com/questions/34842284/vue-js-giving-a-value-to-a-href-in-a-a-tag'"
+      :websiteLink="'https://doubledstumpgrindingwi.com/'"
       :githubLink="'https://github.com/LovelyAndy/MyDadsShit'"
     />
   </div>

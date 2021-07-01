@@ -44,13 +44,14 @@ export default {
   ._contact
     margin-bottom: 4em
 
+@include media('>750px', '<900px')
+  ._contact
+    margin-bottom: 6em
 @include media('>=tablet', '<900px')
   ._hero
     margin-bottom: 10em
   .about,
-  ._portfolio,
-  ._contact
-    margin-bottom: 6em
+  ._portfolio
 
 @include media('>=900px', '<1024px')
   ._navbar
@@ -58,27 +59,31 @@ export default {
   ._hero
     margin-bottom: 8em
   .about,
-  ._portfolio,
-  ._contact
+  ._portfolio
     margin-bottom: 6em
+    margin-bottom: 6em
+  ._contact
+    margin-bottom: 8em
 @include media('>=1024px', '<laptop')
   ._navbar
     margin-bottom: 2em
   ._hero
     margin-bottom: 10em
   .about,
-  ._portfolio,
-  ._contact
+  ._portfolio
     margin-bottom: 6em
+  ._contact
+    margin-bottom: 10em
 @include media('>=laptop')
   ._navbar
     margin-bottom: 2em
   ._hero
     margin-bottom: 20em
   .about,
-  ._portfolio,
-  ._contact
+  ._portfolio
     margin-bottom: 6em
+  ._contact
+    margin-bottom: 10em
 
 @include media('>=laptop', '<desktop')
   ._navbar
@@ -86,14 +91,16 @@ export default {
   ._hero
     margin-bottom: 20em
   .about,
-  ._portfolio,
-  ._contact
+  ._portfolio
     margin-bottom: 6em
+  ._contact
+    margin-bottom: 10em
 @include media('>desktop')
   .navbar
     padding-bottom: 4em
   .about,
-  ._portfolio,
-  ._contact
+  ._portfolio
     margin-bottom: 6em
+  ._contact
+    margin-bottom: 10em
 </style>

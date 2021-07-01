@@ -65,25 +65,38 @@ export default {
   ._text__bottom-text
     margin-top: 2em
 
-@include media('>phone', '<=tablet')
+@include media('>phone', '<=550px')
   ._projects
-    margin-top: 8em
+    margin-top: 4em
+    ._mds,
+    ._stump,
+    ._weather
+      margin-bottom: 4em
+  ._text__bottom-text
+    margin-top: 2em
+
+@include media('<=tablet', '>550px')
+  ._projects
+    margin-top: 6em
     ._mds,
     ._stump,
     ._weather
       transform: scale(1.1)
+      margin-bottom: 8em
     ._mds
-      margin-right: 20em
+      margin-right: 12em
 
     ._stump
-      margin-top: 8em
-      margin-left: 22em
+      margin-left: 12em
 
     ._weather
-      margin-top: 6em
-      margin-right: 18em
-  ._text__bottom-text
-    margin-top: 4em
+      margin-right: 12em
+    ._text__bottom-text
+      margin-top: 4em
+
+    ._text__bottom-text
+      margin-top: 3.5em
+      padding: 0 3.75em
 @include media('>tablet', '<=1200px')
   ._projects
     margin-top: 12em

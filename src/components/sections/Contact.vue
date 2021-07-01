@@ -7,7 +7,7 @@
         music recommendations shoot me a message!
       </p>
       <div class="_btn-wrapper">
-        <button class="_contact-btn t-section-title-lg">let's talk!</button>
+        <button class="_contact-btn t-btn">let's talk!</button>
       </div>
       <StreetCornerPF class="_pic" />
     </div>
@@ -88,28 +88,43 @@ export default {
       color: $c-gold
 ._pic
   align-self: center
+
 button
   background: none
   border: none
   cursor: pointer
 
 @include media('<=phone')
-
+  ._text
+    margin-top: 1em
   ._btn-wrapper
     margin-top: 5em
   ._pic
-    margin-top: 4em
+    margin-top: 8em
 @include media('>phone', '<=tablet')
+  ._text
+    margin-top: 1em
+    padding: 0 1em
   ._btn-wrapper
     margin-top: 6em
   ._pic
     margin-top: 6em
 
 @include media('>tablet', '<laptop')
+  ._text
+    margin-top: 2em
+    padding: 0 4em
+  ._btn-wrapper
+    margin-top: 6em
   ._pic
     display: none
 
 @include media('>=laptop')
+  ._text
+    margin-top: 2em
+    padding: 0 6em
+  ._btn-wrapper
+    margin-top: 6em
   ._pic
     display: none
 </style>

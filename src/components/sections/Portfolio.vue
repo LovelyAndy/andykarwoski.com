@@ -152,21 +152,52 @@ export default {
     flex-direction: row
     justify-content: space-between
     flex-wrap: wrap
-    width: 100%
-    margin-top: 32em
+    margin-top: 24em
     ._mds,
     ._stump,
     ._weather
       transform: scale(1.65)
 
     ._mds
-      // flex-basis: 100%
-      margin-left: 15em
+      padding-left: 18em
     ._stump
-      margin-top: 28em
+      margin-top: 16em
+      padding-right: 5em
     ._weather
-      margin-top: 5em
-      margin-left: 12em
+      margin-top: 20em
+      padding-left: 15em
+
+  ._text__bottom-text
+    margin-top: 4em
+    padding: 0 2em
+
+  ._text__bottom-text
+    margin-top: 5em
+    padding: 0 2em
+@include media('>=desktop')
+  ._projects
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 24em
+    ._mds,
+    ._stump,
+    ._weather
+      transform: scale(1.65)
+
+    ._mds
+      padding-left: 18em
+    ._stump
+      margin-top: 16em
+      padding-right: 5em
+    ._weather
+      margin-top: 20em
+      padding-left: 15em
+
+  ._text__bottom-text
+    margin-top: 4em
+    padding: 0 2em
 
   ._text__bottom-text
     margin-top: 5em

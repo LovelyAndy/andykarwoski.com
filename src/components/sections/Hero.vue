@@ -170,7 +170,7 @@ export default {
       bottom: 0em
     ._profile-pic
       top: 3em
-      left: 3em
+      left: 3.5em
     ._fuji
       bottom: -18em
       left: 5em

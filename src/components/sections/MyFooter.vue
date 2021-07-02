@@ -65,7 +65,7 @@ export default {
 
 ._links
   width: 100%
-  max-width: 48em
+  max-width: 50em
   justify-content: space-between
   &--link
     // font-weight: 600
@@ -106,12 +106,14 @@ export default {
 @include media('>=tablet', '<laptop')
   ._links
     margin-bottom: 2em
+    padding: 0
   ._line2
     margin-top: 2em
 
 @include media('>=laptop')
   ._links
     margin-bottom: 2em
+    padding: 0
   ._line2
     margin-top: 4em
 </style>

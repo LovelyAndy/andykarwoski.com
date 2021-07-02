@@ -59,7 +59,7 @@ export default {
     color: $c-black
     cursor: pointer
     &:hover
-      transform: scale(1.2)
+      transform: scale(1.1)
   ._website
     margin-right: 2em
 </style>

@@ -7,7 +7,7 @@
         music recommendations shoot me a message!
       </p>
       <div class="_btn-wrapper">
-        <button class="_contact-btn t-btn">let's talk!</button>
+        <a href="mailto:andrewkarwoski9@gmail.com" class="_contact-btn t-btn">let's talk!</a>
       </div>
       <StreetCornerPF class="_pic" />
     </div>
@@ -89,7 +89,7 @@ export default {
 ._pic
   align-self: center
 
-button
+a
   background: none
   border: none
   cursor: pointer
@@ -124,7 +124,7 @@ button
     margin-top: 2em
     padding: 0 6em
   ._btn-wrapper
-    margin-top: 6em
+    margin-top: 8em
   ._pic
     display: none
 </style>

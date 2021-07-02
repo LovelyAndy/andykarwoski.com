@@ -2,21 +2,22 @@
   <div class="section-outer footer">
     <div class="col center section-inner">
       <ul class="row _links">
-        <li class="_links--link t-footer-link">
-          <a class="_link" href="" v-scroll-to="'#home'">Home</a>
+        <li class="_links--link grey-underline">
+          <a class="t-footer-link _link" href="" v-scroll-to="'#home'">Home</a>
         </li>
-        <li class="_links--link t-footer-link">
-          <a class="_link" href="" v-scroll-to="'#about'">About</a>
+        <li class="_links--link grey-underline">
+          <a class="t-footer-link _link" href="" v-scroll-to="'#about'">About</a>
         </li>
-        <li class="_links--link t-footer-link">
-          <a class="_link" href="" v-scroll-to="'#portfolio'">Portfolio</a>
+        <li class="_links--link grey-underline">
+          <a class="t-footer-link _link" href="" v-scroll-to="'#portfolio'">Portfolio</a>
         </li>
-        <li class="_links--link t-footer-link">
-          <a class="_link" href="" v-scroll-to="'#contact'">Contact</a>
+        <li class="_links--link grey-underline">
+          <a class="t-footer-link _link" href="" v-scroll-to="'#contact'">Contact</a>
         </li>
       </ul>
+      <hr class="_line1" />
       <BaseLinks class="_base-links" />
-      <hr class="_line" />
+      <hr class="_line2" />
       <div class="_info">
         <div class="_copyright t-footer-minor">Copyright © Andy Karwoski 2021</div>
         <!-- <div class="_copyright t-footer-minor">
@@ -46,26 +47,32 @@ export default {
 <style lang="sass" scoped>
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
-._line
+._line1
   width: 100%
   height: 4px
   background-color: $c-gold
   border: none
+  margin: 2em 0
+._line2
+  width: 100%
+  height: 1px
+  background-color: $c-grey-light
+  border: none
+  width: 100vw
   margin: 1em 0
-
 .footer
   // background-color: #E0E0E0
 
 ._links
   width: 100%
-  max-width: 1000px
+  max-width: 48em
   justify-content: space-between
-  padding: 0
   &--link
     // font-weight: 600
   ._link
     color: $c-grey-dark
-
+._base-links
+  margin: 1.5em 0
 ._info
   display: flex
   flex-direction: row
@@ -80,11 +87,10 @@ export default {
 @include media('<=phone')
   .footer
     padding: 2em 12vw
+  ._line1
+    height: 2px
   ._links
-    // display: flex
-    // flex-direction: column
     width: 100%
-    // max-width: 1000px
     justify-content: space-between
     margin: 1em 0
     padding: 0
@@ -93,11 +99,19 @@ export default {
       color: $c-grey-dark
       font-weight: 500
   ._base-links
-    padding: 1em
+    padding: 0 1em
 
 // @include media('>=425px', '<tablet')
 
-// @include media('>=tablet', '<laptop')
+@include media('>=tablet', '<laptop')
+  ._links
+    margin-bottom: 2em
+  ._line2
+    margin-top: 2em
 
-// @include media('>=laptop')
+@include media('>=laptop')
+  ._links
+    margin-bottom: 2em
+  ._line2
+    margin-top: 4em
 </style>

@@ -6,7 +6,7 @@
     <Portfolio class="_portfolio" />
     <Contact class="_contact" />
     <!-- <Gallery />-->
-    <MyFooter />
+    <MyFooter class="_footer" />
   </div>
 </template>
 
@@ -33,6 +33,8 @@ export default {
   flex-direction: column
   justify-content: center
   align-items: stretch
+._footer
+  margin-bottom: 2em
 
 @include media('<tablet')
   .navbar

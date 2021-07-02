@@ -139,8 +139,8 @@ export default {
       margin-top: 26em
       margin-left: 10em
     ._weather
-      margin-top: 36em
-      margin-left: 20em
+      margin-top: 16em
+      margin-left: 18em
 
   ._text__bottom-text
     margin-top: 4em
@@ -149,8 +149,7 @@ export default {
 @include media('>laptop', '<desktop')
   ._projects
     display: flex
-    flex-direction: row
-    justify-content: space-between
+    flex-direction: column
     flex-wrap: wrap
     margin-top: 24em
     ._mds,
@@ -159,13 +158,14 @@ export default {
       transform: scale(1.65)
 
     ._mds
-      padding-left: 18em
+      margin-right: 55em
     ._stump
-      margin-top: 16em
-      padding-right: 5em
+      margin-top: 5em
+      margin-left: 65em
+
     ._weather
-      margin-top: 20em
-      padding-left: 15em
+      margin-top: 10em
+      margin-right: 60em
 
   ._text__bottom-text
     margin-top: 4em

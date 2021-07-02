@@ -107,7 +107,7 @@ export default {
       max-width: 65em
     ._sns-links
       bottom: 7em
-      left: 28em
+      left: 25em
     ._profile-pic
       top: 5em
       left: -8.5em

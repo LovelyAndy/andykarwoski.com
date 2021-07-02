@@ -17,6 +17,7 @@ Vue.use(VueScrollTo, {
   onCancel: false,
   x: false,
   y: true,
+  behavior: 'smooth',
 })
 
 new Vue({

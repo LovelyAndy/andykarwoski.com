@@ -2,7 +2,7 @@
   <div id="portfolio" class="section-outer portfolio">
     <div class="col section-inner portfolio_wrapper">
       <SectionTitle title="portfolio" fontColor="blue" lineColor="red" />
-      <div class="_projects">
+      <div class="col _projects">
         <ProjectMDS class="_mds" />
 
         <ProjectStump class="_stump" />
@@ -46,8 +46,16 @@ export default {
 
 
 <style lang="sass" scoped>
+// ._projects
+  // this one needs align-items: center
+
+  // and then you can play around with the children ONLY with transform:
+  // transform: translateX(-25em) scale(1.5);
+
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
+._projects
+  align-items: center
 ._text__bottom-text
   padding: 0 1em
 // ._mds,
@@ -81,16 +89,15 @@ export default {
     ._mds,
     ._stump,
     ._weather
-      transform: scale(1.1)
       margin-bottom: 8em
     ._mds
-      margin-right: 12em
+      transform: translateX(-8em) scale(1.1)
 
     ._stump
-      margin-left: 12em
+      transform: translateX(8em) scale(1.1)
 
     ._weather
-      margin-right: 12em
+      transform: translateX(-8em) scale(1.1)
     ._text__bottom-text
       margin-top: 4em
 
@@ -103,44 +110,60 @@ export default {
     ._mds,
     ._stump,
     ._weather
-      transform: scale(1.2)
+      margin-bottom: 8em
     ._mds
-      margin-right: 25em
+      transform: translateX(-16em) scale(1.2)
 
     ._stump
+      transform: translateX(18em) scale(1.2)
       margin-top: 12em
-      margin-left: 32em
 
     ._weather
+      transform: translateX(-12em) scale(1.2)
       margin-top: 12em
-      margin-right: 22em
-  ._text__bottom-text
-    margin-top: 4em
 
   ._text__bottom-text
-    margin-top: 3.5em
+    margin-top: 7em
+    padding: 0 3.75em
+@include media('>=1000px', '<=1200px')
+  ._projects
+    margin-top: 12em
+    ._mds,
+    ._stump,
+    ._weather
+      margin-bottom: 8em
+
+    ._mds
+      transform: translateX(-22em) scale(1.25)
+
+    ._stump
+      transform: translateX(20em) scale(1.25)
+      margin-top: 12em
+
+    ._weather
+      transform: translateX(-21em) scale(1.25)
+      margin-top: 12em
+
+  ._text__bottom-text
+    margin-top: 7em
     padding: 0 3.75em
 
 @include media('>1200px', '<=laptop')
   ._projects
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    flex-wrap: wrap
     margin-top: 24em
     ._mds,
     ._stump,
     ._weather
-      transform: scale(1.5)
+      margin-bottom: 4em
 
     ._mds
-      margin-left: 15em
+      transform: translateX(-21em) scale(1.75)
     ._stump
+      transform: translateX(24em) scale(1.75)
       margin-top: 26em
-      margin-left: 10em
     ._weather
+      transform: translateX(-28em) scale(1.75)
       margin-top: 16em
-      margin-left: 18em
 
   ._text__bottom-text
     margin-top: 4em
@@ -148,56 +171,40 @@ export default {
 
 @include media('>laptop', '<desktop')
   ._projects
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
     margin-top: 24em
     ._mds,
     ._stump,
     ._weather
-      transform: scale(1.65)
+      margin-bottom: 4em
 
     ._mds
-      margin-right: 55em
+      transform: translateX(-25em) scale(1.75)
     ._stump
-      margin-top: 5em
-      margin-left: 65em
-
+      transform: translateX(26em) scale(1.75)
+      margin-top: 26em
     ._weather
-      margin-top: 10em
-      margin-right: 60em
-
-  ._text__bottom-text
-    margin-top: 4em
-    padding: 0 2em
+      transform: translateX(-28em) scale(1.75)
+      margin-top: 22em
 
   ._text__bottom-text
     margin-top: 5em
     padding: 0 2em
 @include media('>=desktop')
   ._projects
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    flex-wrap: wrap
     margin-top: 24em
     ._mds,
     ._stump,
     ._weather
-      transform: scale(1.65)
+      margin-bottom: 4em
 
     ._mds
-      padding-left: 18em
+      transform: translateX(-35em) scale(1.75)
     ._stump
-      margin-top: 16em
-      padding-right: 5em
+      transform: translateX(32em) scale(1.75)
+      margin-top: 18em
     ._weather
-      margin-top: 20em
-      padding-left: 15em
-
-  ._text__bottom-text
-    margin-top: 4em
-    padding: 0 2em
+      transform: translateX(-32em) scale(1.75)
+      margin-top: 15em
 
   ._text__bottom-text
     margin-top: 5em

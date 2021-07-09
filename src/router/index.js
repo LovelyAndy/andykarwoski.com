@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../pages/Home.vue'
 import Dev from '../pages/Dev.vue'
+import Privacy from '../pages/Privacy.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/dev',
     name: 'Dev',
     component: Dev,
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: Privacy,
   },
 ]
 

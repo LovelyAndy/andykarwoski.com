@@ -41,7 +41,7 @@ export default {
     margin-top: 2em
   ._hero
     margin-bottom: 1em
-  .about,
+  ._about,
   ._portfolio,
   ._contact
     margin-bottom: 4em
@@ -52,7 +52,7 @@ export default {
 @include media('>=tablet', '<900px')
   ._hero
     margin-bottom: 10em
-  .about,
+  ._about,
   ._portfolio
 
 @include media('>=900px', '<1024px')
@@ -60,7 +60,7 @@ export default {
     margin-bottom: 0em
   ._hero
     margin-bottom: 8em
-  .about,
+  ._about,
   ._portfolio
     margin-bottom: 6em
     margin-bottom: 6em
@@ -71,7 +71,7 @@ export default {
     margin-bottom: 2em
   ._hero
     margin-bottom: 10em
-  .about,
+  ._about,
   ._portfolio
     margin-bottom: 6em
   ._contact
@@ -81,7 +81,7 @@ export default {
     margin-bottom: 2em
   ._hero
     margin-bottom: 20em
-  .about,
+  ._about,
   ._portfolio
     margin-bottom: 6em
   ._contact
@@ -92,7 +92,7 @@ export default {
     padding-bottom: 4em
   ._hero
     margin-bottom: 20em
-  .about,
+  ._about,
   ._portfolio
     margin-bottom: 6em
   ._contact
@@ -100,7 +100,7 @@ export default {
 @include media('>desktop')
   .navbar
     padding-bottom: 4em
-  .about,
+  ._about,
   ._portfolio
     margin-bottom: 6em
   ._contact

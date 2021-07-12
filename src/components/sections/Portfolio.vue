@@ -65,7 +65,7 @@ export default {
 
 @include media('<=phone')
   ._projects
-    margin-top: 4em
+    margin-top: 6em
     ._mds,
     ._stump,
     ._weather
@@ -75,7 +75,7 @@ export default {
 
 @include media('>phone', '<=550px')
   ._projects
-    margin-top: 4em
+    margin-top: 6em
     ._mds,
     ._stump,
     ._weather
@@ -85,7 +85,7 @@ export default {
 
 @include media('<=tablet', '>550px')
   ._projects
-    margin-top: 6em
+    margin-top: 8em
     ._mds,
     ._stump,
     ._weather
@@ -98,28 +98,39 @@ export default {
 
     ._weather
       transform: translateX(-8em) scale(1.1)
-    ._text__bottom-text
-      margin-top: 4em
 
-    ._text__bottom-text
-      margin-top: 3.5em
-      padding: 0 3.75em
-@include media('>tablet', '<=1200px')
+  ._text__bottom-text
+    margin-top: 3.5em
+    padding: 0 3.75em
+@include media('>tablet', '<=1000px')
   ._projects
     margin-top: 12em
-    ._mds,
-    ._stump,
-    ._weather
-      margin-bottom: 8em
     ._mds
-      transform: translateX(-16em) scale(1.2)
+      transform: translateX(-14em) scale(1.25)
 
     ._stump
-      transform: translateX(18em) scale(1.2)
+      transform: translateX(12em) scale(1.25)
       margin-top: 12em
 
     ._weather
-      transform: translateX(-12em) scale(1.2)
+      transform: translateX(-12em) scale(1.25)
+      margin-top: 12em
+
+  ._text__bottom-text
+    margin-top: 4em
+    padding: 0 3.75em
+@include media('>1000px', '<=1200px')
+  ._projects
+    margin-top: 12em
+    ._mds
+      transform: translateX(-16em) scale(1.25)
+
+    ._stump
+      transform: translateX(18em) scale(1.25)
+      margin-top: 12em
+
+    ._weather
+      transform: translateX(-12em) scale(1.25)
       margin-top: 12em
 
   ._text__bottom-text
@@ -134,36 +145,32 @@ export default {
       margin-bottom: 8em
 
     ._mds
-      transform: translateX(-22em) scale(1.25)
+      transform: translateX(-25em) scale(1.25)
 
     ._stump
-      transform: translateX(20em) scale(1.25)
-      margin-top: 12em
+      transform: translateX(24em) scale(1.25)
+      margin-top: -12em
 
     ._weather
       transform: translateX(-21em) scale(1.25)
-      margin-top: 12em
+      margin-top: -12em
 
   ._text__bottom-text
-    margin-top: 7em
+    margin-top: 2em
     padding: 0 3.75em
 
 @include media('>1200px', '<=laptop')
   ._projects
-    margin-top: 24em
-    ._mds,
-    ._stump,
-    ._weather
-      margin-bottom: 4em
+    margin-top: 20em
 
     ._mds
-      transform: translateX(-21em) scale(1.75)
+      transform: translateX(-28em) scale(1.5)
     ._stump
-      transform: translateX(24em) scale(1.75)
-      margin-top: 26em
+      transform: translateX(28em) scale(1.5)
+      margin-top: -2em
     ._weather
-      transform: translateX(-28em) scale(1.75)
-      margin-top: 16em
+      transform: translateX(-24em) scale(1.5)
+      margin-top: 6em
 
   ._text__bottom-text
     margin-top: 4em
@@ -171,42 +178,34 @@ export default {
 
 @include media('>laptop', '<desktop')
   ._projects
-    margin-top: 24em
-    ._mds,
-    ._stump,
-    ._weather
-      margin-bottom: 4em
+    margin-top: 20em
 
     ._mds
-      transform: translateX(-25em) scale(1.75)
+      transform: translateX(-28em) scale(1.5)
     ._stump
-      transform: translateX(26em) scale(1.75)
-      margin-top: 26em
+      transform: translateX(32em) scale(1.5)
+      margin-top: -10em
     ._weather
-      transform: translateX(-28em) scale(1.75)
-      margin-top: 22em
+      transform: translateX(-20em) scale(1.5)
+      margin-top: 8em
 
   ._text__bottom-text
     margin-top: 5em
     padding: 0 2em
 @include media('>=desktop')
   ._projects
-    margin-top: 24em
-    ._mds,
-    ._stump,
-    ._weather
-      margin-bottom: 4em
+    margin-top: 20em
 
     ._mds
-      transform: translateX(-35em) scale(1.75)
+      transform: translateX(-35em) scale(1.5)
     ._stump
-      transform: translateX(32em) scale(1.75)
-      margin-top: 18em
+      transform: translateX(32em) scale(1.5)
+      margin-top: -8em
     ._weather
-      transform: translateX(-32em) scale(1.75)
-      margin-top: 15em
+      transform: translateX(-28em) scale(1.5)
+      margin-top: 10em
 
   ._text__bottom-text
-    margin-top: 5em
+    margin-top: 6em
     padding: 0 2em
 </style>

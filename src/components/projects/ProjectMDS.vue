@@ -1,12 +1,12 @@
 <template>
   <div>
     <ProjectOutline
-      title="My Dad's Shit"
+      title="My Dad's Stuff"
       titleLocation="bottom"
       frameColor="red"
       frameLocation="top-left"
     >
-      <img src="/svgs/mds-phones.svg" alt="My Dad's Shit App on phone display" />
+      <img src="/svgs/mds-phones.svg" alt="My Dad's Stuff App on phone display" />
       <template v-slot:details>
         <div class="t-project-details _project-details_text">
           An inventory app that provides users a way to smartly keep track of items in their home.
@@ -21,7 +21,7 @@
       website
       github
       :websiteLink="'https://stackoverflow.com/questions/34842284/vue-js-giving-a-value-to-a-href-in-a-a-tag'"
-      :githubLink="'https://github.com/LovelyAndy/MyDadsShit'"
+      :githubLink="'https://github.com/LovelyAndy/MyDadsStuff'"
       class="_links"
     />
   </div>

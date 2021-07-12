@@ -25,6 +25,7 @@ export default {
 
 html
   font-size: 62.5%
+  scroll-behavior: smooth
 body
   margin: 0
   max-width: 100%

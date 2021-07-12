@@ -9,7 +9,7 @@
       <img src="/svgs/weather-boy-site.svg" alt="Weather Boy site image" class="_project-display" />
       <template v-slot:details>
         <div class="t-project-details _project-details_text">
-          Simple weather app built in vanilla JS, utilizing the OpenWeatherMap API.
+          Simple weather app built in vanilla JS, utilizing the OpenWeatherMap API and Firebase.
         </div>
         <TechStack html css js firebase class="_tech-stack" />
       </template>

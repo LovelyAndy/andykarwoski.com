@@ -7,7 +7,7 @@
         music recommendations shoot me a message!
       </p>
       <div class="_btn-wrapper">
-        <a href="mailto:andrewkarwoski9@gmail.com" class="_contact-btn t-btn">let's talk!</a>
+        <a href="mailto:andy@andykarwoski.com" class="_contact-btn t-btn">let's talk!</a>
       </div>
       <StreetCornerPF class="_pic" />
     </div>

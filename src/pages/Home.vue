@@ -54,6 +54,7 @@ export default {
     margin-bottom: 10em
   ._about,
   ._portfolio
+    margin-bottom: 6em
 
 @include media('>=900px', '<1024px')
   ._navbar
@@ -62,7 +63,6 @@ export default {
     margin-bottom: 8em
   ._about,
   ._portfolio
-    margin-bottom: 6em
     margin-bottom: 6em
   ._contact
     margin-bottom: 8em

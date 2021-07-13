@@ -161,9 +161,11 @@ export default {
   position: absolute
   left: 0
   top: 0
-  margin: 1em
+  margin-top: 1.5em
+  margin-left: 1em
   text-align: left
   cursor: pointer
+  z-index: 5
   &:hover
     color: $c-red
 

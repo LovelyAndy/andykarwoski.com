@@ -58,10 +58,6 @@ export default {
   align-items: center
 ._text__bottom-text
   padding: 0 1em
-// ._mds,
-// ._stump,
-// ._weather
-//   max-width: 45.5rem
 
 @include media('<=phone')
   ._projects

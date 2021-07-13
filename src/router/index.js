@@ -28,6 +28,10 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  },
+  // not a big fan of this, but it works for now to get the router to put you at the top of the page
 })
 
 export default router

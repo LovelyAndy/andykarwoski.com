@@ -31,6 +31,7 @@ export default {
     max-width: 100%
     filter: saturate(0%)
     cursor: pointer
+    box-shadow: 6px 5px 4px 0px rgba(0, 0, 0, 0.25)
     &:hover
       filter: saturate(100%)
       transition: all ease-in-out 500ms

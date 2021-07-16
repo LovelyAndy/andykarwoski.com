@@ -26,7 +26,7 @@
       website
       github
       :websiteLink="'https://doubledstumpgrindingwi.com/'"
-      :githubLink="'https://github.com/LovelyAndy/MyDadsStuff'"
+      :githubLink="'https://github.com/LovelyAndy/LovelyAndy---DoubleDStumpGrinding'"
     />
   </div>
 </template>

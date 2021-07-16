@@ -11,14 +11,19 @@
       </div>
       <div class="t-section-title-md _text__bottom-text">
         Check out my
-        <a href="#" style="cursor: pointer; color: #fe4539" class="t-section-title-md red-underline"
+        <a
+          href="/AndyKarwoskiResume.pdf"
+          style="cursor: pointer; color: #fe4539"
+          class="t-section-title-md red-underline"
+          target="_blank"
           >resume</a
         >
         or take a look at my
         <a
-          href="#"
+          href="https://www.linkedin.com/in/andykarwoski/"
           style="cursor: pointer; color: #4062bf"
           class="t-section-title-md blue-underline"
+          target="_blank"
           >linkedin</a
         >
         for more information!

@@ -95,8 +95,9 @@ export default {
     position: absolute
     background-color: $c-black
     color: $c-bg-white
-    font-size: 1.8rem
-    padding: 1em
+    font-size: 1.5rem
+    padding: 1em 0em
+    padding-left: 1em
     overflow: hidden
   ._title-top
     top: 0

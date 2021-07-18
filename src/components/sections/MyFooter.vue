@@ -68,6 +68,7 @@ export default {
   width: 100%
   max-width: 50em
   justify-content: space-between
+  align-self: center
   &--link
     // font-weight: 600
   ._link
@@ -104,9 +105,23 @@ export default {
   ._base-links
     padding: 0 1em
 
-// @include media('>=425px', '<tablet')
-
-@include media('>=tablet', '<laptop')
+@include media('>phone', '<=tablet')
+  .footer
+    padding: 2em 12vw
+  ._line1
+    height: 2px
+  ._links
+    width: 100%
+    justify-content: space-between
+    margin: 1em 0
+    padding: 0
+    &--link
+      // font-size: 200%
+      color: $c-grey-dark
+      font-weight: 500
+  ._base-links
+    padding: 0 1em
+@include media('>tablet', '<laptop')
   ._links
     margin-bottom: 2em
     padding: 0

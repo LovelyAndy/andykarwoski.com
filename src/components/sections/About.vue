@@ -8,9 +8,9 @@
           web dev with an eye for design.
         </p>
         <p class="t-body">
-          Spending most of my adult life in one of the biggest cities in the world taught me a lot
-          about different cultures & perspectives as well as the various passions can drive us all.
-          It also gave me Japanese fluency; which is pretty nice as well.
+          Spending most of my adult life in one of the busiest cities in the world taught me a lot
+          about different cultures and perspectives as well as the various passions that can drive
+          us all. It also gave me Japanese fluency; which is pretty nice as well.
         </p>
         <p class="t-body">Film, music and fitness is what I’m all about.</p>
         <p class="t-body">

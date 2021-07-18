@@ -14,7 +14,7 @@
       <a href="https://medium.com/" target="_blank" class="_icon" draggable="false"
         ><img src="/svgs/medium.svg" alt="Medium Link" draggable="false"
       /></a>
-      <a href="#" target="_blank" class="_icon" draggable="false"
+      <a href="https://dribbble.com/LovelyAndy" target="_blank" class="_icon" draggable="false"
         ><img src="/svgs/dribbble.svg" alt="Dribbble Link" draggable="false"
       /></a>
     </div>

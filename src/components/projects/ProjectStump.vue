@@ -1,7 +1,7 @@
 <template>
   <div>
     <ProjectOutline
-      title="doubledstumpgrinding.com"
+      title="doubledstumpgrindingwi.com"
       titleLocation="top"
       frameColor="gold"
       frameLocation="bottom-right"

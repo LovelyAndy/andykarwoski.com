@@ -1,19 +1,6 @@
-# andykarwoski.com
+# Version 1 of Personal Portfolio - andykarwoski.com
 
-## Project setup
-```
-npm install
-```
+Built by Andy Karwoski using VueJS and Firebase. No UI frameworks.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![image](https://user-images.githubusercontent.com/68723584/126159595-374147a5-3d2d-4363-af43-df92431db9f2.png)

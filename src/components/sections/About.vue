@@ -15,9 +15,11 @@
         <p class="t-body">Film, music and fitness is what I’m all about.</p>
         <p class="t-body">
           I’ve also started a
-          <span style="cursor: pointer; color: #fe4539" class="red-underline">blog</span> about my
-          life from the busy streets of Tokyo, to my dive into the vast ocean of programming if
-          you’re into that sort of thing.
+          <span style="cursor: pointer; color: #fe4539" class="red-underline"
+            ><a href="https://medium.com/@LovelyAndy" target="_blank">blog</a></span
+          >
+          about my life from the busy streets of Tokyo, to my dive into the vast ocean of
+          programming if you’re into that sort of thing.
         </p>
       </div>
       <SuidobashiPF class="_pic" />
@@ -45,6 +47,8 @@ export default {
 @import '../../css/colors.sass'
 @import '../../css/breakpoints.scss'
 
+a
+  color: inherit
 ._text
   text-align: left
   padding: 1em 2em

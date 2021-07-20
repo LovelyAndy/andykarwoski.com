@@ -6,6 +6,12 @@
         <img src="/svgs/website-link.svg" alt="Link to project website" class="_icon" />
       </a>
     </div>
+    <div v-if="appstore" class="row">
+      <a :href="appstoreLink" target="_blank" class="_app-store">
+        <div class="t-section-title-sm">app store</div>
+        <img src="/svgs/website-link.svg" alt="Link to project on app store" class="_icon" />
+      </a>
+    </div>
     <div v-if="github" class="row">
       <a :href="githubLink" target="_blank" class="_github">
         <div class="t-section-title-sm">view repo</div>
@@ -27,6 +33,8 @@ export default {
   props: {
     website: { type: Boolean, default: false },
     websiteLink: { type: String },
+    appstore: { type: Boolean, default: false },
+    appstoreLink: { type: String },
     github: { type: Boolean, default: false },
     githubLink: { type: String },
     figma: { type: Boolean, default: false },
@@ -53,6 +61,7 @@ export default {
     width: clamp(2.4rem, 1.8857rem + 2vw, 3.6rem)
     margin-left: .5em
   ._github,
+  ._app-store,
   ._website,
   ._figma
     display: flex
@@ -61,5 +70,7 @@ export default {
     &:hover
       transform: scale(1.1)
   ._website
+    margin-right: 2em
+  ._app-store
     margin-right: 2em
 </style>

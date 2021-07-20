@@ -18,9 +18,9 @@
       </template>
     </ProjectOutline>
     <ProjectLinks
-      website
+      appstore
       github
-      :websiteLink="'https://stackoverflow.com/questions/34842284/vue-js-giving-a-value-to-a-href-in-a-a-tag'"
+      :appstoreLink="'https://apps.apple.com/us/app/my-dads-stuff/id1575920671#?platform=iphone'"
       :githubLink="'https://github.com/LovelyAndy/MyDadsStuff'"
       class="_links"
     />

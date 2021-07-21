@@ -11,11 +11,15 @@
       <a href="https://github.com/LovelyAndy" target="_blank" class="_icon" draggable="false"
         ><img src="/svgs/github.svg" alt="Github Link" draggable="false"
       /></a>
+      <a
+        href="https://stackoverflow.com/users/story/14494747"
+        target="_blank"
+        class="_icon"
+        draggable="false"
+        ><img src="/svgs/stackoverflow.svg" alt="stackoverflow Link" draggable="false"
+      /></a>
       <a href="https://medium.com/" target="_blank" class="_icon" draggable="false"
         ><img src="/svgs/medium.svg" alt="Medium Link" draggable="false"
-      /></a>
-      <a href="https://dribbble.com/LovelyAndy" target="_blank" class="_icon" draggable="false"
-        ><img src="/svgs/dribbble.svg" alt="Dribbble Link" draggable="false"
       /></a>
     </div>
   </div>

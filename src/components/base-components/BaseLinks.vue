@@ -18,7 +18,7 @@
         draggable="false"
         ><img src="/svgs/stackoverflow.svg" alt="stackoverflow Link" draggable="false"
       /></a>
-      <a href="https://medium.com/" target="_blank" class="_icon" draggable="false"
+      <a href="https://medium.com/@LovelyAndy" target="_blank" class="_icon" draggable="false"
         ><img src="/svgs/medium.svg" alt="Medium Link" draggable="false"
       /></a>
     </div>

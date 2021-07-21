@@ -8,8 +8,12 @@
     </div>
     <div v-if="appstore" class="row">
       <a :href="appstoreLink" target="_blank" class="_app-store">
-        <div class="t-section-title-sm">app store</div>
-        <img src="/svgs/website-link.svg" alt="Link to project on app store" class="_icon" />
+        <!-- <div class="t-section-title-sm">app store</div> -->
+        <img
+          src="/svgs/app-store-dl.svg"
+          alt="Link to project on app store"
+          class="_icon-app-store"
+        />
       </a>
     </div>
     <div v-if="github" class="row">
@@ -60,11 +64,16 @@ export default {
     cursor: pointer
     width: clamp(2.4rem, 1.8857rem + 2vw, 3.6rem)
     margin-left: .5em
+  ._icon-app-store
+    width: 12em
+
   ._github,
   ._app-store,
   ._website,
   ._figma
     display: flex
+    justify-content: center
+    align-items: center
     color: $c-black
     cursor: pointer
     &:hover

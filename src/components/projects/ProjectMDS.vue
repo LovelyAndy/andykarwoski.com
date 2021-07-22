@@ -12,15 +12,17 @@
           An inventory app that provides users a way to smartly keep track of items in their home.
           <br />
           <br />
-          Launched to both iOS and Android in July of 2021.
+          Launched on both iOS and Android in July of 2021.
         </div>
         <TechStack html css sass vuejs firebase capacitor class="_tech-stack" />
       </template>
     </ProjectOutline>
     <ProjectLinks
-      appstore
+      appStore
+      googlePlay
       github
-      :appstoreLink="'https://apps.apple.com/us/app/my-dads-stuff/id1575920671#?platform=iphone'"
+      :appStoreLink="'https://apps.apple.com/us/app/my-dads-stuff/id1575920671#?platform=iphone'"
+      :googlePlayLink="'https://play.google.com/store/apps/details?id=com.andykarwoski.mydadsstuff'"
       :githubLink="'https://github.com/LovelyAndy/MyDadsStuff'"
       class="_links"
     />

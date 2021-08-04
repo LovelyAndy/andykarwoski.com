@@ -41,14 +41,4 @@ li
 h1
   margin: 0
   padding: 0
-// @include media('<=phone')
-//   body
-//     // background-color: #aea9
-
-// @include media('>phone','<=tablet')
-//   body
-//     background-color: #daa
-// @include media('>=tablet', '<laptop')
-//   body
-//     background-color: #a3c3d9
 </style>

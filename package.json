@@ -4,22 +4,23 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && presite ./dist"
+    "build": "vue-cli-service build && presite ./dist",
+    "dep:update-all": "ncu --target=minor --upgrade && npm i"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
+    "core-js": "^3.16.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.2",
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
     "presite": "^2.1.2",
-    "sass": "^1.26.5",
+    "sass": "^1.37.5",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.14"
   }
 }

@@ -20,7 +20,7 @@
       <hr class="_line2" />
       <div class="_info">
         <div class="_copyright t-footer-minor">Copyright © Andy Karwoski 2021</div>
-        <router-link to='/privacy' class="_copyright t-footer-minor">Privacy Policy</router-link to='/privacy'>
+        <router-link to="/privacy" class="_copyright t-footer-minor">Privacy Policy</router-link>
         <!-- <div class="_copyright t-footer-minor">
           Email: <span class="_email t-footer-minor">andy@andykarwoski.com</span>
         </div> -->

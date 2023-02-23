@@ -2,7 +2,7 @@
   <div class="component-wrapper">
     <div class="container">
       <a
-        href="https://www.linkedin.com/in/andrew-karwoski-b95689122/"
+        href="https://www.linkedin.com/in/andykarwoski/"
         target="_blank"
         class="_icon"
         draggable="false"
@@ -12,7 +12,7 @@
         ><img src="/svgs/github.svg" alt="Github Link" draggable="false"
       /></a>
       <a
-        href="https://stackoverflow.com/users/story/14494747"
+        href="https://stackoverflow.com/users/14494747/lovelyandy"
         target="_blank"
         class="_icon"
         draggable="false"
@@ -36,7 +36,6 @@ export default {
   methods: {},
 }
 </script>
-
 
 <style lang="sass" scoped>
 @import '../../css/colors.sass'

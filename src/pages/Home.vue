@@ -5,7 +5,6 @@
     <About class="_about" />
     <Portfolio class="_portfolio" />
     <Contact class="_contact" />
-    <!-- <Gallery />-->
     <MyFooter class="_footer" />
   </div>
 </template>
@@ -15,16 +14,15 @@ import NavBar from '../components/base-components/NavBar.vue'
 import MyFooter from '../components/sections/MyFooter.vue'
 import Hero from '../components/sections/Hero.vue'
 import About from '../components/sections/About.vue'
-import Gallery from '../components/sections/Gallery.vue'
 import Portfolio from '../components/sections/Portfolio.vue'
 import Contact from '../components/sections/Contact.vue'
 
 export default {
   name: 'Home',
-  components: { NavBar, Hero, MyFooter, About, Gallery, Portfolio, Contact },
+  components: { NavBar, Hero, MyFooter, About, Portfolio, Contact },
 }
 </script>
-<style lang="sass"scoped>
+<style lang="sass" scoped>
 @import '../css/colors.sass'
 @import '../css/breakpoints.scss'
 
